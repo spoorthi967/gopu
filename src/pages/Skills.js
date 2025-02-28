@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Skills.css"; // Import styles
-import skillsImage from "../Images/tree.png"; // Replace with your image
 
 import { FaReact, FaNodeJs, FaDatabase, FaGithub, FaTools, FaCode, FaBug, FaServer } from "react-icons/fa";
 
@@ -74,10 +73,7 @@ const Skills = () => {
 
   return (
     <section className="skills-main-container">
-      {/* Left Section - Image */}
-      <div className="skills-image">
-        <img src={skillsImage} alt="Skills" />
-      </div>
+      
 
       {/* Right Section - Skills Slider */}
       <div className="skills-content">

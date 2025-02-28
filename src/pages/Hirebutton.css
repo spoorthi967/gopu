@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color:white;
+    color:#e91e63;
     height:800px;
     padding-top: 0px;
    
@@ -12,5 +12,4 @@
 
 .heading-titles h2{
     padding-bottom: 50px;
-}
-
+} 

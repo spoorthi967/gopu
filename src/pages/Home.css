@@ -1,65 +1,69 @@
+/* Home Container */
 .home-container {
   position: relative;
   width: 100%;
   height: 100vh;
-  
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-align: left;
   padding: 0 10%;
+  padding-top: 150px;
+  overflow: hidden;
 }
 
+/* Dark Overlay Effect */
 .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Dark overlay effect */
+  background: rgba(0, 0, 0, 0.7);
   top: 0;
   left: 0;
 }
 
+/* Content Wrapper */
 .content {
   display: flex;
   align-items: center;
   z-index: 1;
+  max-width: 1200px;
+  width: 100%;
 }
 
+/* Text Section */
 .text-section {
   flex: 1;
   max-width: 600px;
 }
 
+/* Headings */
 h1 {
-  font-size: 1.2rem;
+  font-size: xx-large;
   font-weight: bold;
-  font-size:xx-large;
   font-family: 'Times New Roman', Times, serif;
 }
 
 h1 span {
-  color: #ffffff; /* Highlighted color */
-  font-size: xx-large;
-  font-family: 'Times New Roman', Times, serif;
+  color: #e91e63;/* Highlighted color for contrast */
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-size: medium;
   font-family: 'Times New Roman', Times, serif;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 20px;
-  line-height: 1.5;
-  font-size: medium;
+  line-height: 1.6;
   font-family: 'Times New Roman', Times, serif;
 }
 
+/* Buttons */
 .buttons {
   display: flex;
   gap: 15px;
@@ -70,21 +74,39 @@ p {
   border: none;
   padding: 12px 24px;
   font-size: 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #d81b60;
 }
 
 .btn-outline-light {
   border: 2px solid white;
   padding: 12px 24px;
   font-size: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
+.btn-outline-light:hover {
+  background: white;
+  color: black;
+}
+
+/* Image Section */
 .image-section img {
   max-width: 400px;
   border-radius: 10px;
   opacity: 0.9;
+  transition: transform 0.3s ease-in-out;
 }
 
-@media (max-width: 768px) {
+.image-section img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
   .content {
     flex-direction: column;
     text-align: center;
@@ -96,5 +118,15 @@ p {
 
   .buttons {
     justify-content: center;
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-outline-light {
+    width: 100%;
+  }
+
+  .image-section img {
+    max-width: 300px;
   }
 }

@@ -1,47 +1,47 @@
-/* Experience Main Container */
+/* Main Experience Section */
 .experience-main-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 40px;
+  flex-wrap: wrap; /* Improves responsiveness */
+  padding: 40px 80px; /* Adjusted padding */
   background-color: #000; /* Black background */
   color: #fff; /* White text */
-  padding-right: 80px;
+  gap: 40px; /* Adds spacing between elements */
 }
 
 /* Left Section - Image */
 .experience-image {
   flex: 1;
   max-width: 500px;
-
-
 }
 
 .experience-image img {
   width: 100%;
- 
+  border-radius: 10px; /* Soft rounded edges */
+  box-shadow: 4px 4px 15px rgba(255, 255, 255, 0.1); /* Subtle glow effect */
+  transition: transform 0.3s ease-in-out;
 }
 
+.experience-image img:hover {
+  transform: scale(1.05);
+}
 
 /* Right Section - Content */
 .experience-content {
   flex: 2;
   max-width: 800px;
-  height: 400px;
- 
-
+  height: auto;
+  text-align: left;
 }
 
+/* Title Styling */
 .experience-title {
-  font-size: 28px;
+  font-size: 2rem;
   font-weight: bold;
   color: #e91e63;
-  margin-top: 0px;
-  margin-bottom: 40px;
-  display: flex;
- justify-content: center;
-
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .experience-title i {
@@ -53,12 +53,20 @@
 .experience-card {
   background: #111; /* Dark gray background for cards */
   padding: 20px;
-  margin: 10px;
+  border-radius: 10px;
+  margin: 15px 0;
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease-in-out;
 }
 
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Title */
 .experience-card h2 {
   font-size: 22px;
-  color: #e91e63; /* Matching the title color */
+  color: #e91e63; /* Matches the title color */
   display: flex;
   align-items: center;
 }
@@ -68,6 +76,7 @@
   color: #f4a261;
 }
 
+/* Company Name */
 .experience-company {
   font-size: 18px;
   font-weight: bold;
@@ -81,6 +90,7 @@
   color: #e9c46a;
 }
 
+/* Duration */
 .experience-duration {
   font-size: 16px;
   color: #f4f4f4;
@@ -114,7 +124,8 @@
 }
 
 /* Slick Carousel Customization */
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
   color: #e91e63 !important;
   z-index: 1000;
 }
@@ -129,4 +140,29 @@
 
 .slick-slide:hover {
   transform: scale(1.02);
+}
+
+/* 🔥 Responsive Design */
+@media (max-width: 992px) {
+  .experience-main-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .experience-content {
+    width: 100%;
+  }
+
+  .experience-image img {
+    max-width: 350px;
+  }
+
+  .experience-title {
+    font-size: 1.8rem;
+  }
+
+  .experience-card {
+    padding: 15px;
+  }
 }

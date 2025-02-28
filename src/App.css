@@ -3,15 +3,14 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background-color: #121212;
-  color: white;
-  font-size: x-large;
+  color: #e91e63;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 /* Navbar Styling */
 .navbar-container {
   display: flex;
-  font-size: x-large;
-  font-family: 'Times New Roman', Times, serif;
   align-items: center;
   justify-content: space-between;
   padding: 15px 5%;
@@ -22,13 +21,15 @@ body {
   z-index: 1000;
 }
 
-.bi{
-  color:#e91e63
+/* Logo */
+.logo img {
+  height: 60px;
+  width: auto;
 }
 
+/* Navigation Menu */
 .nav-menu ul {
   list-style: none;
-  font-size: x-large;
   display: flex;
   gap: 20px;
   padding: 0;
@@ -36,13 +37,11 @@ body {
 }
 
 .nav-menu ul li {
-  font-size: x-large;
   display: flex;
   align-items: center;
 }
 
 .nav-menu ul li a {
-  font-size: x-large;
   text-decoration: none;
   color: white;
   font-size: 1rem;
@@ -52,39 +51,35 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
-.nav-menu ul li a img {
-  font-size: x-large;
-  height: 22px;
+.nav-menu ul li a:hover {
+  color: white;
 }
 
-.nav-menu ul li a:hover {
- 
-  color: #e91e63;
+/* Hamburger Menu for Mobile */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color:white;
+  cursor: pointer;
 }
 
 /* Footer Styling */
 .footer {
-  font-size: x-large;
   text-align: center;
-  padding: 60px;
+  padding: 40px 20px;
   background: rgba(0, 0, 0, 0.9);
   position: relative;
- 
 }
 
 .social-links {
-  font-size: x-large;
   display: flex;
   justify-content: center;
   gap: 15px;
-  color: #e91e63;
 }
 
 .social-links a img {
-  font-size: x-large;
   height: 40px;
   transition: transform 0.3s ease-in-out;
-  
 }
 
 .social-links a img:hover {
@@ -92,13 +87,17 @@ body {
 }
 
 .footer-text h6 {
-  font-size: x-large;
   margin-top: 10px;
   font-size: 0.9rem;
   opacity: 0.8;
 }
 
 /* Responsive Design */
+@media (max-width: 992px) {
+  .nav-menu ul {
+    gap: 10px;
+  }
+}
 
 @media (max-width: 768px) {
   .navbar-container {
@@ -106,14 +105,34 @@ body {
     text-align: center;
   }
 
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
   .nav-menu ul {
     flex-direction: column;
-    font-size: x-large;
-    gap: 10px;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .nav-menu.show {
+    display: flex;
   }
 
   .social-links {
-    font-size: x-large;
     flex-wrap: wrap;
   }
+
+  .social-links a img {
+    height: 35px;
+  }
+
+
 }
