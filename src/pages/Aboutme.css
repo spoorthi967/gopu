@@ -26,7 +26,7 @@
 .fade-in {
   font-size: 36px;
   font-weight: bold;
-  color: #e63946;
+  color: #e91e63;
 }
 
 .highlight {
@@ -46,7 +46,7 @@
 }
 
 .about-btn {
-  background-color: #e63946;
+  background-color: #e91e63;
   color: white;
   padding: 10px 20px;
   font-size: 16px;
@@ -58,5 +58,5 @@
 }
 
 .about-btn:hover {
-  background-color: #d62828;
+  background-color: #e91e63;
 }

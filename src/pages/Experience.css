@@ -27,15 +27,16 @@
 /* Right Section - Content */
 .experience-content {
   flex: 2;
-  max-width: 600px;
-  margin-top: 0px;
+  max-width: 800px;
+  height: 400px;
+ 
 
 }
 
 .experience-title {
   font-size: 28px;
   font-weight: bold;
-  color: white;
+  color: #e91e63;
   margin-top: 0px;
   margin-bottom: 40px;
   display: flex;
@@ -45,20 +46,19 @@
 
 .experience-title i {
   margin-right: 10px;
-  color: #e63946;
+  color: #e91e63;
 }
 
 /* Experience Card Styles */
 .experience-card {
   background: #111; /* Dark gray background for cards */
   padding: 20px;
-
   margin: 10px;
 }
 
 .experience-card h2 {
   font-size: 22px;
-  color: #e63946; /* Matching the title color */
+  color: #e91e63; /* Matching the title color */
   display: flex;
   align-items: center;
 }
@@ -91,7 +91,7 @@
 
 .experience-duration i {
   margin-right: 8px;
-  color: #29ad9e;
+  color: #e91e63;
 }
 
 /* Experience List Styles */
@@ -110,17 +110,17 @@
 
 .experience-list li i {
   margin-right: 8px;
-  color: #3570a3;
+  color: #e91e63;
 }
 
 /* Slick Carousel Customization */
 .slick-prev, .slick-next {
-  color: #e63946 !important;
+  color: #e91e63 !important;
   z-index: 1000;
 }
 
 .slick-dots li button:before {
-  color: #e63946 !important;
+  color: #e91e63 !important;
 }
 
 .slick-slide {

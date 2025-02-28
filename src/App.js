@@ -26,7 +26,7 @@ const App = () => {
   <ul>
     <li><Link to="/"><i className="bi bi-house-door"></i> HOME</Link></li> {/* Home Icon */}
     <li><Link to="/about"><i className="bi bi-person"></i> ABOUT ME</Link></li> {/* Person Icon */}
-    <li><Link to="/education"><i className="bi bi-graduation-cap"></i> EDUCATION</Link></li> {/* Graduation Cap Icon */}
+    <li><Link to="/education"> <i class="bi bi-mortarboard-fill"></i>EDUCATION</Link></li> {/* Graduation Cap Icon */}
     <li><Link to="/experience"><i className="bi bi-briefcase"></i> EXPERIENCE</Link></li> {/* Briefcase Icon */}
     <li><Link to="/skills"><i className="bi bi-lightbulb"></i> SKILLS</Link></li> {/* Lightbulb Icon */}
     <li><Link to="/contact"><i className="bi bi-envelope"></i> CONTACT</Link></li> {/* Envelope Icon */}
