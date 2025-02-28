@@ -1,0 +1,132 @@
+/* Experience Main Container */
+.experience-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  padding-right: 80px;
+}
+
+/* Left Section - Image */
+.experience-image {
+  flex: 1;
+  max-width: 500px;
+
+
+}
+
+.experience-image img {
+  width: 100%;
+ 
+}
+
+
+/* Right Section - Content */
+.experience-content {
+  flex: 2;
+  max-width: 600px;
+  margin-top: 0px;
+
+}
+
+.experience-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  display: flex;
+ justify-content: center;
+
+}
+
+.experience-title i {
+  margin-right: 10px;
+  color: #e63946;
+}
+
+/* Experience Card Styles */
+.experience-card {
+  background: #111; /* Dark gray background for cards */
+  padding: 20px;
+
+  margin: 10px;
+}
+
+.experience-card h2 {
+  font-size: 22px;
+  color: #e63946; /* Matching the title color */
+  display: flex;
+  align-items: center;
+}
+
+.experience-card h2 i {
+  margin-right: 8px;
+  color: #f4a261;
+}
+
+.experience-company {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f4a261;
+  display: flex;
+  align-items: center;
+}
+
+.experience-company i {
+  margin-right: 8px;
+  color: #e9c46a;
+}
+
+.experience-duration {
+  font-size: 16px;
+  color: #f4f4f4;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.experience-duration i {
+  margin-right: 8px;
+  color: #29ad9e;
+}
+
+/* Experience List Styles */
+.experience-list {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-list li {
+  font-size: 16px;
+  color: #ddd;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.experience-list li i {
+  margin-right: 8px;
+  color: #3570a3;
+}
+
+/* Slick Carousel Customization */
+.slick-prev, .slick-next {
+  color: #e63946 !important;
+  z-index: 1000;
+}
+
+.slick-dots li button:before {
+  color: #e63946 !important;
+}
+
+.slick-slide {
+  transition: transform 0.3s ease-in-out;
+}
+
+.slick-slide:hover {
+  transform: scale(1.02);
+}

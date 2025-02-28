@@ -1,0 +1,16 @@
+.Hire-me-containner{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    height:800px;
+    padding-top: 0px;
+   
+}
+
+.heading-titles h2{
+    padding-bottom: 50px;
+}
+
