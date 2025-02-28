@@ -2,7 +2,7 @@ import React from "react";
 import "./Aboutme.css";
 import about from "../Images/about.webp";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+
 
 
 const Aboutme = () => {

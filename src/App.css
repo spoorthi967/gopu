@@ -4,11 +4,14 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #121212;
   color: white;
+  font-size: x-large;
 }
 
 /* Navbar Styling */
 .navbar-container {
   display: flex;
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
   align-items: center;
   justify-content: space-between;
   padding: 15px 5%;
@@ -19,10 +22,13 @@ body {
   z-index: 1000;
 }
 
-
+.bi{
+  color:#e91e63
+}
 
 .nav-menu ul {
   list-style: none;
+  font-size: x-large;
   display: flex;
   gap: 20px;
   padding: 0;
@@ -30,11 +36,13 @@ body {
 }
 
 .nav-menu ul li {
+  font-size: x-large;
   display: flex;
   align-items: center;
 }
 
 .nav-menu ul li a {
+  font-size: x-large;
   text-decoration: none;
   color: white;
   font-size: 1rem;
@@ -45,15 +53,18 @@ body {
 }
 
 .nav-menu ul li a img {
+  font-size: x-large;
   height: 22px;
 }
 
 .nav-menu ul li a:hover {
+ 
   color: #e91e63;
 }
 
 /* Footer Styling */
 .footer {
+  font-size: x-large;
   text-align: center;
   padding: 60px;
   background: rgba(0, 0, 0, 0.9);
@@ -62,6 +73,7 @@ body {
 }
 
 .social-links {
+  font-size: x-large;
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -69,6 +81,7 @@ body {
 }
 
 .social-links a img {
+  font-size: x-large;
   height: 40px;
   transition: transform 0.3s ease-in-out;
   
@@ -79,12 +92,14 @@ body {
 }
 
 .footer-text h6 {
+  font-size: x-large;
   margin-top: 10px;
   font-size: 0.9rem;
   opacity: 0.8;
 }
 
 /* Responsive Design */
+
 @media (max-width: 768px) {
   .navbar-container {
     flex-direction: column;
@@ -93,10 +108,12 @@ body {
 
   .nav-menu ul {
     flex-direction: column;
+    font-size: x-large;
     gap: 10px;
   }
 
   .social-links {
+    font-size: x-large;
     flex-wrap: wrap;
   }
 }

@@ -17,21 +17,22 @@ import Latestworks from "./pages/Latestworks";
 const App = () => {
   return (
     // Add basename here for GitHub Pages
-    <Router basename="/">
+    <Router basename="/gopu">
       <header className="navbar-container">
         <div className="logo">
           <img src={logo1} height={70} width={240} alt="Logo" />
         </div>
         <nav className="nav-menu">
-          <ul>
-            <li><Link to="/"><img src="https://www.nicepng.com/png/full/17-178841_home-png-home-icon-free.png" alt="home" /> Home</Link></li>
-            <li><Link to="/about"><img src="https://cdn3.iconfinder.com/data/icons/users-6/100/654854-user-women-4096.png" alt="about" /> About Me</Link></li>
-            <li><Link to="/education"><img src="https://icon-library.com/images/education-icon-free/education-icon-free-1.jpg" alt="education" /> Education</Link></li>
-            <li><Link to="/experience"><img src="https://static.thenounproject.com/png/2370183-200.png" alt="experience" /> Experience</Link></li>
-            <li><Link to="/skills"><img src="https://icon-library.com/images/skills-icon-vector/skills-icon-vector-11.jpg" alt="skills" /> Skills</Link></li>
-            <li><Link to="/contact"><img src="https://icon-library.com/images/contacts-icon-png/contacts-icon-png-0.jpg" alt="contact" /> Contact</Link></li>
-          </ul>
-        </nav>
+  <ul>
+    <li><Link to="/"><i className="bi bi-house-door"></i> HOME</Link></li> {/* Home Icon */}
+    <li><Link to="/about"><i className="bi bi-person"></i> ABOUT ME</Link></li> {/* Person Icon */}
+    <li><Link to="/education"><i className="bi bi-graduation-cap"></i> EDUCATION</Link></li> {/* Graduation Cap Icon */}
+    <li><Link to="/experience"><i className="bi bi-briefcase"></i> EXPERIENCE</Link></li> {/* Briefcase Icon */}
+    <li><Link to="/skills"><i className="bi bi-lightbulb"></i> SKILLS</Link></li> {/* Lightbulb Icon */}
+    <li><Link to="/contact"><i className="bi bi-envelope"></i> CONTACT</Link></li> {/* Envelope Icon */}
+  </ul>
+</nav>
+
       </header>
         
       <Routes>

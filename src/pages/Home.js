@@ -3,8 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import pic from '../Images/pic.jpg';
 import './Home.css';
-import React, { useState } from "react";
-import HireButton from "./HireButton";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
