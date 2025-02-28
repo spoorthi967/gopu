@@ -10,6 +10,7 @@
   flex-wrap: wrap; /* Improves responsiveness */
   text-align: left;
   gap: 40px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Education Image */

@@ -11,12 +11,13 @@
   font-size: x-large;
   flex-wrap: wrap; /* Allows better responsiveness */
   text-align: left;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* About Photo */
 .about-photo img {
   width: 250px;
-  height: 400px;
+  height: 530px;
   border-radius: 10px;
   object-fit: cover; /* Ensures proper image fitting */
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Adds depth */
