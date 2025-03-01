@@ -48,13 +48,13 @@ const App = () => {
       <footer className="footer">
         <div className="social-links">
           <a href="https://www.linkedin.com/in/gopu-spoorthi-79185a200/" target="_blank" rel="noopener noreferrer">
-            <img src="https://www.freepnglogos.com/uploads/linkedin-blue-style-logo-png-0.png" alt="LinkedIn" />
+          <i class="bi bi-linkedin"></i>
           </a>
           <a href="https://github.com/spoorthi967" target="_blank" rel="noopener noreferrer">
-            <img src="https://icones.pro/wp-content/uploads/2021/06/symbole-github-orange.png" alt="GitHub" />
+          <i class="bi bi-github"></i>
           </a>
-          <a href="mailto:your-email@example.com">
-            <img src="https://static.vecteezy.com/system/resources/previews/021/514/701/non_2x/google-gmail-logo-symbol-design-illustration-with-black-background-free-vector.jpg" height={40} width={40} alt="Email" />
+          <a href="mailto:your-gopuspoorthi18@gmail.com">
+          <i class="bi bi-envelope-at-fill"></i>
           </a>
         </div>
       </footer>

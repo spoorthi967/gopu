@@ -28,6 +28,7 @@
 .content {
   display: flex;
   align-items: center;
+  font-family: 'Times New Roman', Times, serif;
   z-index: 1;
   max-width: 1200px;
   width: 100%;
@@ -36,6 +37,7 @@
 /* Text Section */
 .text-section {
   flex: 1;
+  font-family: 'Times New Roman', Times, serif;
   max-width: 600px;
 }
 
@@ -43,11 +45,13 @@
 h1 {
   font-size: xx-large;
   font-weight: bold;
+
   font-family: 'Times New Roman', Times, serif;
 }
 
 h1 span {
   color: #e91e63;/* Highlighted color for contrast */
+  font-family: 'Times New Roman', Times, serif;
 }
 
 h2 {

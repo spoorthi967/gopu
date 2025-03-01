@@ -1,43 +1,40 @@
 .skills-main-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Ensures side-by-side layout */
   justify-content: center;
   align-items: center;
   background-color: #000000;
-  padding: 0px;
-  padding-top: 250px;
+  padding: 250px 50px;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
-}
-
-.skills-image img {
-  height: auto;
-  border-radius: 10px;
-}
-
-.skills-content {
-  width: 80%;
-  text-align: center;
+  gap: 30px; /* Adds spacing between image and content */
 
 }
 
-.skills-content h2 {
-  padding-bottom: 60px;
-}
-
-.skills-container h2 {
-  font-size: x-large;
-  font-family: 'Times New Roman', Times, serif;
-  color: white;
-}
-
-.slick-slider {
+/* Left - Image Section */
+.skills-image {
+  flex: 1;
   display: flex;
   justify-content: center;
 }
 
-.slick-slide {
-  padding: 10px;
+.skills-image img {
+  width: 100%;
+  max-width: 400px; /* Adjusts image size */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Right - Skills Content */
+.skills-content {
+  flex: 1;
+  width: 50%;
+  text-align: center;
+}
+
+.skills-content h2 {
+  padding-bottom: 30px;
+  color: white;
 }
 
 .skills-category {
@@ -58,19 +55,17 @@
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .skill-item {
   display: flex;
   align-items: center;
-  
   gap: 8px;
   padding: 10px;
   background: black;
   border-radius: 8px;
   font-size: 1rem;
-  font-family: 'Times New Roman', Times, serif;
+  color: white;
 }
 
 .skill-item svg {
@@ -78,105 +73,20 @@
   color: #ec4c59;
 }
 
-/* Media queries for responsive design */
+/* Media Queries for Responsive Design */
 
-/* For small devices like phones (max-width 600px) */
-@media (max-width: 600px) {
+/* Stack layout for smaller screens */
+@media (max-width: 900px) {
   .skills-main-container {
-    padding-top: 50px; /* Reduced padding on small screens */
+    flex-direction: column;
+    padding: 50px 20px;
   }
 
   .skills-content {
-    width: 90%; /* Make skills content width smaller on mobile */
-    padding-right: 0; /* Remove extra padding */
+    width: 100%;
   }
 
-  .skills-container h2 {
-    font-size: 1.5rem; /* Smaller title font size */
-  }
-
-  .skills-list {
-    flex-direction: column; /* Stack skill items vertically on small screens */
-  }
-
-  .skill-item {
-    width: 100%; /* Make skill items take full width on small screens */
-    justify-content: flex-start; /* Align skill items to the left */
-    font-size: 1rem; /* Smaller font size */
-  }
-
-  .skills-category {
-    padding: 15px; /* Reduced padding for smaller screens */
-  }
-
-  .skills-category h3 {
-    font-size: 1.2rem; /* Smaller font size for category heading */
-  }
-}
-
-/* For medium devices like tablets (max-width 768px) */
-@media (max-width: 768px) {
-  .skills-main-container {
-    padding-top: 100px; /* Adjust padding for tablet screens */
-  }
-
-  .skills-content {
-    width: 80%; /* Adjust width for tablets */
-    padding-right: 20px; /* Reduced padding */
-  }
-
-  .skills-container h2 {
-    font-size: 1.8rem; /* Slightly smaller title font size */
-  }
-
-  .skills-list {
-    flex-direction: row; /* Keep skill items in a row */
-    gap: 15px; /* Slightly larger gap between items */
-  }
-
-  .skill-item {
-    width: 45%; /* Make skill items take less space, adjust for tablets */
-    justify-content: center; /* Center items */
-  }
-
-  .skills-category {
-    padding: 20px; /* Standard padding */
-  }
-
-  .skills-category h3 {
-    font-size: 1.5rem; /* Adjust font size for category heading */
-  }
-}
-
-/* For large devices (min-width 1200px) */
-@media (min-width: 1200px) {
-  .skills-main-container {
-    padding-top: 250px; /* Keep the larger padding on desktop */
-  }
-
-  .skills-content {
-    width: 50%; /* Keep content at 50% width */
-    padding-right: 150px; /* Add padding */
-  }
-
-  .skills-container h2 {
-    font-size: 2rem; /* Larger font size for large screens */
-  }
-
-  .skills-list {
-    flex-direction: row; /* Keep skill items in a row */
-    gap: 20px; /* Larger gap between items */
-  }
-
-  .skill-item {
-    width: 200px; /* Fixed width for large screens */
-  }
-
-  .skills-category {
-    padding: 25px; /* Increase padding on larger screens */
-  }
-
-  .skills-category h3 {
-    font-size: 1.8rem; /* Adjust category heading font size */
+  .skills-image img {
+    max-width: 300px; /* Reduce image size on small screens */
   }
 }

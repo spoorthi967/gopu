@@ -4,9 +4,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Skills.css"; // Import styles
 
+
 import { FaReact, FaNodeJs, FaDatabase, FaGithub, FaTools, FaCode, FaBug, FaServer } from "react-icons/fa";
 
+
+
+
+
 const skillsData = [
+
+  
   {
     category: "Front-End Technologies",
     skills: [
@@ -73,9 +80,12 @@ const Skills = () => {
 
   return (
     <section className="skills-main-container">
-      
+      {/* Left Section - Image */}
+    
 
       {/* Right Section - Skills Slider */}
+
+    
       <div className="skills-content">
         <h2>SKILLS AND TECHNOLOGIES</h2>
 

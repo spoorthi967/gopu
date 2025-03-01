@@ -15,12 +15,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Styling for individual project slides */
 .project-slide {
   text-align: center;
   padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Styling for project heading (title) */
@@ -28,6 +30,7 @@
   font-size: 1.8rem; /* Default font size for larger screens */
   margin-bottom: 10px;
   color: #fff;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Styling for project subheading */
@@ -35,12 +38,14 @@
   font-size: 1.2rem;
   color: #e91e63;
   margin-bottom: 15px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Styling for project list */
 .project-slide ul {
   list-style: none;
   padding: 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Styling for each list item */
@@ -48,6 +53,7 @@
   font-size: 1rem;
   color: white;
   margin: 5px 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Custom styling for Slick dots (pagination buttons) */

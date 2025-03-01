@@ -15,6 +15,7 @@
   width: 100%;
   max-width: 800px; /* Ensures the slider doesn't stretch too wide on large screens */
   margin: 0 auto;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .slick-slide {
@@ -33,6 +34,7 @@
   width: 100%;
   color: #ffffff;
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Title and headers styling */
@@ -41,6 +43,7 @@ h2 {
   color: #f4a261;
   margin-bottom: 20px;
   font-family: 'Arial', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Paragraph styling */
@@ -55,6 +58,7 @@ p {
 .skills-list {
   list-style: none;
   padding: 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .skills-list li {
@@ -63,6 +67,7 @@ p {
   font-size: 16px;
   color: #ffffff;
   margin-bottom: 8px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .skills-list .icon {

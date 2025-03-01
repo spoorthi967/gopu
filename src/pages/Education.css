@@ -17,6 +17,7 @@
 .education-image img {
   width: 400px;
   height: auto;
+  font-family: 'Times New Roman', Times, serif;
   border-radius: 10px;
   object-fit: cover;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
@@ -31,6 +32,7 @@
 .education-content {
   width: 50%;
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
   height: auto;
   max-width: 600px;
 }
@@ -38,6 +40,7 @@
 /* Title Styling */
 .education-title {
   font-size: 2.2rem;
+  font-family: 'Times New Roman', Times, serif;
   color: #e91e63;
   margin-bottom: 20px;
   font-weight: bold;
@@ -50,6 +53,7 @@
   padding: 20px;
   border-radius: 10px;
   margin: 20px 0;
+  font-family: 'Times New Roman', Times, serif;
   text-align: left;
   box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease-in-out;
@@ -63,6 +67,7 @@
 .education-institute, .education-duration, .education-gpa {
   font-size: 1.1rem;
   margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: 500;
   line-height: 1.6;
 }
@@ -78,6 +83,7 @@
 @media (max-width: 992px) {
   .education-main-container {
     flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     padding-top: 100px;
   }
