@@ -1,45 +1,74 @@
 .contact-container {
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
-    background: #000000;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 150px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background: #000000; /* Dark background color */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px; /* Reduced margin-top for smaller screens */
+  color: white; /* Text color for readability */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  margin-top: 250px;
+  margin-bottom: 180px;
+}
 
+.contact-container h2 {
+  color: #f4a261; /* Warm accent color for the heading */
+  font-size: 1.8rem; /* Scalable font size */
+}
+
+.contact-container p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.contact-container a {
+  color: #e63946; /* Accent color for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-container a:hover {
+  text-decoration: underline;
+}
+
+.contact-container strong {
+  color: #f4a261; /* Accent color for labels */
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    max-width: 90%; /* More flexible on smaller screens */
+    margin-top: 30px; /* Adjusted top margin */
+    padding: 15px; /* Reduced padding for smaller screens */
   }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+
+  .contact-container h2 {
+    font-size: 1.6rem; /* Adjust font size for smaller screens */
   }
-  
-  .contact-form input, 
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #f4a261;
-    border-radius: 5px;
-    
+
+  .contact-container p {
+    font-size: 1rem; /* Slightly smaller font size on mobile */
   }
-  
-  .contact-form textarea {
-    height: 120px;
-   
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    max-width: 95%; /* Further flexibility on very small screens */
+    margin-top: 20px; /* Smaller margin-top for very small screens */
+    padding: 10px; /* Reduced padding */
   }
-  
-  .contact-form button {
-    background-color: #e63946;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+
+  .contact-container h2 {
+    font-size: 1.4rem; /* Even smaller heading size for tiny screens */
   }
-  
-  .contact-form button:hover {
-    background-color: #0056b3;
+
+  .contact-container p {
+    font-size: 0.9rem; /* Smaller font size for very small screens */
   }
-  
+
+  .contact-container a {
+    font-size: 0.9rem; /* Slightly smaller link text */
+  }
+}

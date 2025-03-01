@@ -57,9 +57,14 @@ const Experience = () => {
               <i className="bi bi-calendar-event"></i> August 2020 – March 2023
             </p>
             <ul className="experience-list">
-              <li><i className="bi bi-laptop"></i> Developed responsive, mobile-friendly web applications using React.js.</li>
-              <li><i className="bi bi-braces"></i> Implemented state management solutions with Redux.</li>
-              <li><i className="bi bi-globe2"></i> Integrated RESTful APIs for dynamic data rendering.</li>
+              <li><i className="bi bi-laptop"></i>Developed responsive, mobile-friendly web applications using React.js and JavaScript .</li>
+              <li><i className="bi bi-braces"></i> Implemented state management solutions with Redux to handle complex application states
+              efficiently.</li>
+              <li><i className="bi bi-globe2"></i> Integrated RESTful APIs for dynamic data rendering and asynchronous request handling.</li>
+              <li><i className="bi bi-laptop"></i>Utilized Webpack and Babel for front-end build optimization and faster load times .</li>
+              <li><i className="bi bi-braces"></i>Collaborated closely with UI/UX teams to ensure design consistency and user-centered features .</li>
+              <li><i className="bi bi-globe2"></i> Leveraged Git for version control, managing code repositories and contributing to continuous
+              integration workflows.</li>
             </ul>
           </div>
 
@@ -73,8 +78,16 @@ const Experience = () => {
               <i className="bi bi-calendar-event"></i> 2018 – 2020
             </p>
             <ul className="experience-list">
-              <li><i className="bi bi-code"></i> Assisted in developing and maintaining web applications.</li>
-              <li><i className="bi bi-palette"></i> Implemented responsive web interfaces using HTML, CSS, and JavaScript.</li>
+              <li><i className="bi bi-code"></i> Assisted in developing and maintaining web applications, focusing on front-end design and
+              functionality.</li>
+              <li><i className="bi bi-palette"></i> Collaborated with senior developers to implement responsive web interfaces using HTML,
+              CSS, and JavaScript</li>
+              <li><i className="bi bi-code"></i>     Gained hands-on experience in web technologies, enhancing understanding of web development
+              frameworks and best practices.              </li>
+    
+              <li><i className="bi bi-palette"></i>  Supported the integration of web applications with back-end systems for improved performance
+              and user experience.               </li>
+
             </ul>
           </div>
         </Slider>
