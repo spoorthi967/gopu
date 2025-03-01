@@ -1,3 +1,5 @@
+
+
 .contact-container {
   max-width: 500px;
   margin: 0 auto;
@@ -10,7 +12,7 @@
   color: white; /* Text color for readability */
   box-sizing: border-box; /* Ensures padding doesn't affect width */
   margin-top: 250px;
-  margin-bottom: 180px;
+
 }
 
 .contact-container h2 {

@@ -9,13 +9,14 @@
   color: #fff; /* White text */
   gap: 40px; /* Adds spacing between elements */
   font-family: 'Times New Roman', Times, serif;
+  margin-top: 150px;
 }
 
 /* Left Section - Image */
 .experience-image {
   flex: 1;
   max-width: 500px;
-  margin-top: 50px;
+ 
 }
 
 .experience-image img {
