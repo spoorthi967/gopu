@@ -1,11 +1,12 @@
-
+/* General Styling */
 body {
   margin: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Poppins', sans-serif;
   background-color: black;
   color: #e91e63;
   font-weight: bold;
   font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Navbar Styling */
@@ -28,11 +29,6 @@ body {
 }
 
 /* Navigation Menu */
-.nav-menu {
-  display: flex;  /* Ensures visibility on larger screens */
-  gap: 20px;
-}
-
 .nav-menu ul {
   list-style: none;
   display: flex;
@@ -42,7 +38,8 @@ body {
 }
 
 .bi {
-  color: #e91e63;
+  color:#e91e63;
+
 }
 
 .nav-menu ul li {
@@ -63,46 +60,19 @@ body {
 .nav-menu ul li a:hover {
   color: #e91e63;
 }
+@media (max-width: 768px) {
+  .navbar {
+    display: block !important;
+  }
+}
+
 
 /* Hamburger Menu for Mobile */
 .menu-toggle {
   display: none;
   font-size: 2rem;
-  color: white;
+  color:white;
   cursor: pointer;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-menu {
-    display: none;  /* Hidden by default on mobile */
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-menu ul {
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px 0;
-  }
-
-  .nav-menu.show {
-    display: flex;  /* Shows menu when toggled */
-  }
-
-  .social-links {
-    flex-wrap: wrap;
-  }
 }
 
 /* Footer Styling */
@@ -117,11 +87,12 @@ body {
   display: flex;
   justify-content: center;
   gap: 15px;
+  
 }
 
 .social-links a img {
   height: 50px;
-  width: 50px;
+  width:  50px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -133,4 +104,50 @@ body {
   margin-top: 10px;
   font-size: 0.9rem;
   opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .nav-menu ul {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+  }
+
+  .social-links a .bi {
+    height: 45px;
+  
+  }
+
+
 }
