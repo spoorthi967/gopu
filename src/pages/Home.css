@@ -9,7 +9,7 @@
   color: white;
   text-align: left;
   padding: 0 10%;
-  padding-top: 150px;
+  padding-top: 80px;
   overflow: hidden;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -101,6 +101,7 @@ p {
 /* Image Section */
 .image-section img {
   max-width: 400px;
+  
   border-radius: 10px;
   opacity: 0.9;
   transition: transform 0.3s ease-in-out;

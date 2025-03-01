@@ -58,7 +58,7 @@
 @media (max-width: 480px) {
   .contact-container {
     max-width: 95%; /* Further flexibility on very small screens */
-    margin-top: 20px; /* Smaller margin-top for very small screens */
+    margin-top: 100px; /* Smaller margin-top for very small screens */
     padding: 10px; /* Reduced padding */
   }
 

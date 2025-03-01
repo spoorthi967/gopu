@@ -17,7 +17,7 @@
 /* About Photo */
 .about-photo img {
   width: 250px;
-  height: 530px;
+  height: 550px;
   border-radius: 10px;
   object-fit: cover; /* Ensures proper image fitting */
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Adds depth */
@@ -117,7 +117,7 @@
 
   .about-photo img {
     width: 200px;
-    height: 320px;
+    height: 350px;
   }
 
   .about-btn {
