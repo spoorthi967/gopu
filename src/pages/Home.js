@@ -19,7 +19,7 @@ const Home = () => {
             Bringing designs to life with code is not just my job—it's my passion! 
           </p>
           <div className="buttons">
-            <button onClick={() => navigate("/hirebutton")}className="latest-btn btn btn-primary">Hire Me</button>
+          
             <button onClick={() => navigate("/latestworks")}className="latest-btn btn btn-primary">Latest works</button>
           </div>
         </div>

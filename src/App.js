@@ -10,29 +10,42 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
 import logo1 from './Images/logo1.png';
-import HireButton from "./pages/HireButton";
 import Moreabout from "./pages/Moreabout";   
 import Latestworks from "./pages/Latestworks";
 
 const App = () => {
-  useEffect(() => {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector(".nav-menu");
-
-    if (menuToggle) {
-      menuToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("show");
-      });
-    }
-
-    return () => {
+    useEffect(() => {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navMenu = document.querySelector(".nav-menu");
+      const navLinks = document.querySelectorAll(".nav-menu a");
+    
       if (menuToggle) {
-        menuToggle.removeEventListener("click", () => {
+        menuToggle.addEventListener("click", () => {
           navMenu.classList.toggle("show");
         });
       }
-    };
-  }, []);
+    
+      // Close menu when clicking on a nav link
+      navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("show");
+        });
+      });
+    
+      return () => {
+        if (menuToggle) {
+          menuToggle.removeEventListener("click", () => {
+            navMenu.classList.toggle("show");
+          });
+        }
+        navLinks.forEach(link => {
+          link.removeEventListener("click", () => {
+            navMenu.classList.remove("show");
+          });
+        });
+      };
+    }, []);
+    
 
   return (
     <Router basename="/gopu">
@@ -67,7 +80,7 @@ const App = () => {
         <Route path="/skills" element={<Skills />} />
         <Route path="/moreabout" element={<Moreabout />} /> 
         <Route path="/latestworks" element={<Latestworks />} />
-        <Route path="/hirebutton" element={<HireButton />} />
+      
       </Routes>
 
       <footer className="footer">
