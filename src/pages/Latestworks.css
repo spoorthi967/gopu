@@ -11,6 +11,8 @@
   text-align: center;
 }
 
+
+
 /* Slick slide styling */
 .slick-slide {
   display: flex;
@@ -84,11 +86,14 @@
 @media (max-width: 768px) {
   .latest-works-container {
     min-height: 100vh;
-    padding: 15px;
+    padding: 100px ,0px;
     width: 95%; /* Adjust width */
     margin: 20px auto; /* Adjust margin to ensure space around container */
   }
 
+  
+
+}
   .project-slide h2 {
     font-size: 1.4rem;
   }
@@ -114,7 +119,7 @@
     text-align: center;
     max-width: 300px; /* Restrict max width to prevent overflow */
   }
-}
+
 
 /* Tablet View - Adjust for Medium Screens */
 @media (max-width: 1024px) {
