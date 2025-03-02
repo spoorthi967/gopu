@@ -23,7 +23,6 @@
 h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  color:#e91e63;
 }
 
 .highlight {
@@ -60,7 +59,7 @@ p {
 }
 
 .image-section img {
-  width: 200px;
+  width: 350px;
   height: auto;
   border-radius: 5%;
   border: 4px solid #e91e63;
