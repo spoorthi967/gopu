@@ -1,13 +1,14 @@
 /* Container for Latest Works */
 .latest-works-container {
-  max-width: 100%; /* Make the container responsive */
-  margin: 50px auto;
+  width: 90%; /* Adjust width for responsiveness */
+  max-width: 1200px; /* Restrict max width for readability */
+  margin: 60px auto;
   padding: 20px;
   background: #000000;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 150px;
   font-family: 'Times New Roman', Times, serif;
+  text-align: center;
 }
 
 /* Slick slide styling */
@@ -15,37 +16,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Styling for individual project slides */
 .project-slide {
   text-align: center;
   padding: 20px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
-/* Styling for project heading (title) */
+/* Project title styling */
 .project-slide h2 {
-  font-size: 1.8rem; /* Default font size for larger screens */
+  font-size: 1.8rem;
   margin-bottom: 10px;
   color: #f4a261;
-  font-family: 'Times New Roman', Times, serif;
 }
 
-/* Styling for project subheading */
+/* Project subheading styling */
 .project-slide h3 {
   font-size: 1.2rem;
   color: #e91e63;
   margin-bottom: 15px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Styling for project list */
 .project-slide ul {
   list-style: none;
   padding: 0;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Styling for each list item */
@@ -53,7 +49,6 @@
   font-size: 1rem;
   color: white;
   margin: 5px 0;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Custom styling for Slick dots (pagination buttons) */
@@ -65,59 +60,68 @@
 .back-button1 {
   display: flex;
   justify-content: center;
-
 }
 
-/* Back button styling */
+/* Button styling */
 .btn1 {
   color: white;
   background-color: #e91e63;
   font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
 }
 
-/* Media queries for responsive design */
+.btn1:hover {
+  background-color: #f4a261;
+}
 
-/* For small devices like phones (max-width 600px) */
-@media (max-width: 800px) {
+/* Mobile View - Adjust for Small Screens */
+@media (max-width: 768px) {
   .latest-works-container {
-    padding: 15px; /* Reduce padding for smaller screens */
-    margin-top: 50px; /* Adjust margin for small devices */
+    padding: 15px;
+    width: 95%;
+    margin-top: 50px; /* Adjust margin */
   }
 
   .project-slide h2 {
-    font-size: 1.5rem; /* Smaller font size for headings */
+    font-size: 1.4rem;
   }
 
   .project-slide h3 {
-    font-size: 1rem; /* Smaller subheading font size */
+    font-size: 1rem;
   }
 
   .project-slide ul li {
-    font-size: 0.9rem; /* Smaller list item font size */
+    font-size: 0.9rem;
   }
 
   .back-button1 {
-    flex-direction: column; /* Stack back button items vertically on small screens */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
   }
 
   .btn1 {
-    font-size: 0.9rem; /* Adjust button size */
+    font-size: 0.9rem;
+    width: 100%; /* Full width for smaller screens */
+    text-align: center;
   }
 }
 
-/* For medium devices like tablets (max-width 768px) */
-@media (max-width: 768px) {
+/* Tablet View - Adjust for Medium Screens */
+@media (max-width: 1024px) {
   .latest-works-container {
-    padding: 20px; /* Keep the padding same but reduce the max-width */
     max-width: 95%;
   }
 
   .project-slide h2 {
-    font-size: 1.7rem; /* Slightly smaller heading for tablets */
+    font-size: 1.6rem;
   }
 
   .project-slide h3 {
-    font-size: 1.1rem; /* Adjust subheading size */
+    font-size: 1.1rem;
   }
 
   .project-slide ul li {
@@ -125,53 +129,52 @@
   }
 
   .back-button1 {
-    flex-direction: row; /* Align back button items horizontally on medium screens */
+    flex-direction: row;
   }
 }
 
-/* For large devices like desktops (min-width 1200px) */
+/* Desktop View - Large Screens */
 @media (min-width: 1200px) {
   .latest-works-container {
-    margin-top: 150px; /* Keep large margin for desktops */
-    max-width: 800px; /* Default max-width for larger screens */
+    max-width: 900px;
   }
 
   .project-slide h2 {
-    font-size: 2rem; /* Larger font size for headings on desktops */
+    font-size: 2rem;
   }
 
   .project-slide h3 {
-    font-size: 1.3rem; /* Larger subheading font size */
+    font-size: 1.3rem;
   }
 
   .project-slide ul li {
-    font-size: 1.1rem; /* Slightly larger font size for list items */
+    font-size: 1.1rem;
   }
 
   .btn1 {
-    font-size: 1.1rem; /* Adjust button size for larger screens */
+    font-size: 1.1rem;
   }
 }
 
-/* For extra-large devices (min-width: 1600px) */
+/* Extra-Large Screens */
 @media (min-width: 1600px) {
   .latest-works-container {
-    max-width: 1000px; /* Larger container width for large screens */
+    max-width: 1000px;
   }
 
   .project-slide h2 {
-    font-size: 2.2rem; /* Increase font size for large screens */
+    font-size: 2.2rem;
   }
 
   .project-slide h3 {
-    font-size: 1.5rem; /* Increase subheading size */
+    font-size: 1.5rem;
   }
 
   .project-slide ul li {
-    font-size: 1.2rem; /* Larger list item font size */
+    font-size: 1.2rem;
   }
 
   .btn1 {
-    font-size: 1.2rem; /* Increase button size */
+    font-size: 1.2rem;
   }
 }
