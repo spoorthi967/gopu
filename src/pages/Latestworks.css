@@ -79,11 +79,13 @@
 }
 
 /* Mobile View - Adjust for Small Screens */
+
+/* Mobile View - Adjust for Small Screens */
 @media (max-width: 768px) {
   .latest-works-container {
     padding: 15px;
-    width: 95%;
-    /* Adjust margin */
+    width: 95%; /* Adjust width */
+    margin: 20px auto; /* Adjust margin to ensure space around container */
   }
 
   .project-slide h2 {
@@ -101,12 +103,15 @@
   .back-button1 {
     flex-direction: column; /* Stack buttons vertically */
     align-items: center;
+    margin-top: 20px; /* Add some space above */
   }
 
   .btn1 {
     font-size: 0.9rem;
-    width: 100%; /* Full width for smaller screens */
+    width: 80%; /* Adjust width of button to ensure it's not too wide */
+    padding: 12px; /* Increase padding for better clickability */
     text-align: center;
+    max-width: 300px; /* Restrict max width to prevent overflow */
   }
 }
 

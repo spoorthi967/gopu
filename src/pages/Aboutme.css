@@ -33,7 +33,9 @@
   max-width: 600px;
   margin-left: 20px;
 }
-
+.about-text h1{
+  color:#f4a261;
+}
 /* Fade-in Text */
 .fade-in {
   font-size: 36px;
