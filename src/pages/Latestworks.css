@@ -83,6 +83,7 @@
 /* Mobile View - Adjust for Small Screens */
 @media (max-width: 768px) {
   .latest-works-container {
+    min-height: 100vh;
     padding: 15px;
     width: 95%; /* Adjust width */
     margin: 20px auto; /* Adjust margin to ensure space around container */
