@@ -90,7 +90,7 @@ p {
 
   .image-section img {
     width: 250px; /* Smaller image size for mobile */
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .buttons {
