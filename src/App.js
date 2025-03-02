@@ -57,7 +57,7 @@ const App = () => {
       {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
-          <p>© 2024 Your Name. All Rights Reserved.</p>
+          <p>© 2025 Gopu Spoorthi. All Rights Reserved.</p>
           <div className="social-links">
             <a href="https://www.linkedin.com/in/gopu-spoorthi-79185a200/" target="_blank" rel="noopener noreferrer">
               <i className="bi bi-linkedin"></i>
