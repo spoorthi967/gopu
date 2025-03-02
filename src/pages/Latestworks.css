@@ -78,7 +78,7 @@
 /* Media queries for responsive design */
 
 /* For small devices like phones (max-width 600px) */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .latest-works-container {
     padding: 15px; /* Reduce padding for smaller screens */
     margin-top: 50px; /* Adjust margin for small devices */
