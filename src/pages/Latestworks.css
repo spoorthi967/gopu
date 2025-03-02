@@ -51,7 +51,7 @@
 /* Styling for each list item */
 .project-slide ul li {
   font-size: 1rem;
-  color: white;
+  color: #e91e63;
   margin: 5px 0;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -71,7 +71,6 @@
 /* Back button styling */
 .btn1 {
   color: white;
-  background-color: #e91e63;
   font-size: 1rem;
 }
 
