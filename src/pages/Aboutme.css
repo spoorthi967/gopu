@@ -7,8 +7,8 @@
   padding: 50px;
   background-color: #000;
   color: #fff;
-  padding-top: 300px;
   font-size: x-large;
+  margin-top: 100px;
   flex-wrap: wrap; /* Allows better responsiveness */
   text-align: left;
   font-family: 'Times New Roman', Times, serif;
@@ -16,8 +16,8 @@
 
 /* About Photo */
 .about-photo img {
-  width: 250px;
-  height: 550px;
+  width: 150px;
+  height: auto;
   border-radius: 10px;
   object-fit: cover; /* Ensures proper image fitting */
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Adds depth */

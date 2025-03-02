@@ -6,7 +6,7 @@
   background: #000000;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 150px;
+  margin-top: 50px;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -71,6 +71,7 @@
 /* Back button styling */
 .btn1 {
   color: white;
+  background-color: #e91e63;
   font-size: 1rem;
 }
 
