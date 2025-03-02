@@ -29,7 +29,7 @@
 .project-slide h2 {
   font-size: 1.8rem; /* Default font size for larger screens */
   margin-bottom: 10px;
-  color: #fff;
+  color: #f4a261;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -51,7 +51,7 @@
 /* Styling for each list item */
 .project-slide ul li {
   font-size: 1rem;
-  color: #e91e63;
+  color: white;
   margin: 5px 0;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -65,12 +65,13 @@
 .back-button1 {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+
 }
 
 /* Back button styling */
 .btn1 {
   color: white;
+  background-color: #e91e63;
   font-size: 1rem;
 }
 
