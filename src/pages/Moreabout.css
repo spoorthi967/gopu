@@ -5,7 +5,8 @@
   align-items: center;
   min-height: 100vh;
   background-color: #222;
-  padding-top: 50px;
+  padding-top: 100px;
+  height: 200vh;
   padding-bottom: 50px;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -104,7 +105,8 @@ p {
 /* For small devices like phones (max-width 600px) */
 @media (max-width: 600px) {
   .moreabout-container {
-    padding-top: 50px;
+    padding-top: 150px;
+    height: 200vh;
     padding-bottom: 20px;
   }
 

@@ -80,7 +80,8 @@
 @media (max-width: 900px) {
   .skills-main-container {
     flex-direction: column;
-    padding: 100px 20px; /* Adjust padding for small screens */
+    padding: 200px 20px; /* Adjust padding for small screens */
+    height: 200vh;
   }
 
   .skills-content {

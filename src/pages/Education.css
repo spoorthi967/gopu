@@ -4,9 +4,10 @@
   align-items: center;
   justify-content: center;
   background-color: #222;
-  padding: 150px 20px;
+  padding: 250px 20px;
   color: #ffffff; /* White text */
   flex-wrap: wrap;
+  height: 200vh;
   text-align: left;
   gap: 40px;
   font-family: 'Times New Roman', Times, serif;
