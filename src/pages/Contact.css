@@ -1,21 +1,48 @@
-/* .contact-container styles */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure Full Page Height */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000; /* Match background color */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Wrapper */
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Contact Container */
 .contact-container {
   max-width: 500px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   padding: 20px;
-  background: #222; /* Dark background color */
+  background: #000000;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 250px; /* Default margin-top for larger screens */
-  color: white; /* Text color for readability */
-  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  box-shadow: 0 0 10px rgba(46, 44, 44, 0.1);
+  margin-top: 150px; /* Adjusted for better visibility */
+  color: white;
 }
 
 /* Heading styles */
 .contact-container h2 {
-  color: #f4a261; /* Warm accent color for the heading */
-  font-size: 1.8rem; /* Scalable font size */
+  color: #f4a261;
+  font-size: 1.8rem;
 }
 
 /* Paragraph styles */
@@ -26,7 +53,7 @@
 
 /* Link styles */
 .contact-container a {
-  color: #e63946; /* Accent color for links */
+  color: #f4a261;
   text-decoration: none;
   font-weight: bold;
 }
@@ -37,56 +64,99 @@
 
 /* Strong tag for labels */
 .contact-container strong {
-  color: #f4a261; /* Accent color for labels */
+  color: #f4a261;
 }
 
-/* Media Query for tablets */
+/* Button Styling */
+.btn {
+  display: inline-block;
+  background-color: #f4a261;
+  color: black;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #e76f51;
+  color: white;
+}
+
+/* Image Styling - Ensuring Full Visibility */
+.contact-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px; /* Optional: Adds a rounded corner effect */
+}
+
+/* Ensuring "Latest Works" Button is Visible */
+.latest-works-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.latest-works-container .btn {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  padding: 10px;
+  text-align: center;
+  background: #222;
+  color: white;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .contact-container {
-    max-width: 90%; /* More flexible on smaller screens */
-    margin-top: 120px; /* Adjusted top margin */
-    padding: 15px; /* Reduced padding for smaller screens */
+    max-width: 90%;
+    margin-top: 80px; /* Adjusted for better visibility */
+    padding: 15px;
   }
 
   .contact-container h2 {
-    font-size: 1.6rem; /* Adjust font size for smaller screens */
+    font-size: 1.6rem;
   }
 
   .contact-container p {
-    font-size: 1rem; /* Slightly smaller font size on mobile */
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 10px 16px;
   }
 }
 
-/* Media Query for very small screens */
 @media (max-width: 480px) {
   .contact-container {
-    max-width: 95%; /* Further flexibility on very small screens */
-    margin-top: 10px; /* Smaller margin-top for very small screens */
-    padding: 10px; /* Reduced padding */
+    max-width: 95%;
+    margin-top: 240px;
+    padding: 10px;
   }
 
   .contact-container h2 {
-    font-size: 1.4rem; /* Even smaller heading size for tiny screens */
+    font-size: 1.4rem;
   }
 
   .contact-container p {
-    font-size: 0.9rem; /* Smaller font size for very small screens */
+    font-size: 0.9rem;
   }
 
-  .contact-container a {
-    font-size: 0.9rem; /* Slightly smaller link text */
+  .contact-container img {
+    max-width: 100%;
+    height: auto;
   }
-}
 
-/* Ensure footer stays at the bottom */
-body, html {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Footer container should always be at the bottom */
-footer {
-  margin-top: auto; /* Pushes the footer to the bottom */
+  .btn {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
 }

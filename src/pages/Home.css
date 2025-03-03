@@ -31,7 +31,8 @@
   width: 100%;
   max-width: 400px;
   border-radius: 15px;
-  object-fit: cover;
+  object-fit: cover; /* Ensures full image visibility */
+  height: auto;
 }
 
 /* Text Section */
@@ -43,7 +44,6 @@
 .text-section p {
   font-size: 1rem;
   font-weight: bold;
- 
 }
 
 .text-section span {
@@ -53,7 +53,7 @@
 .text-section h1 {
   font-size: 2rem;
   font-weight: bold;
-  color:white;
+  color: white;
 }
 
 .description {
@@ -83,7 +83,7 @@
 /* Mobile View */
 @media screen and (max-width: 768px) {
   .home-container {
-    height:800PX;
+    height: auto;
     padding: 10px;
   }
 
@@ -93,16 +93,20 @@
     gap: 1.5rem;
   }
 
-  /* Ensure image appears first */
+  /* Ensure image appears properly */
   .image-section {
     order: -1;
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .image-section img {
-    width: 80%;
-    height:80%;
-    max-width: 350px;
+    width: 100%;
+    max-width: 100%; /* Adjusts dynamically */
+    height: auto; /* Ensures correct scaling */
+    object-fit: contain; /* Preserves aspect ratio */
+    margin-top: 100px;;
   }
 
   .text-section {
@@ -123,5 +127,6 @@
     text-align: center;
     display: block;
     margin: 1rem auto;
+    margin-bottom: 60px;
   }
 }
