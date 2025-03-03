@@ -44,7 +44,7 @@
   .contact-container {
     max-width: 90%; /* More flexible on smaller screens */
     margin-top: 30px; /* Adjusted top margin */
-    height: 200vh;
+    height: 100vh;
     padding: 15px; /* Reduced padding for smaller screens */
   }
 

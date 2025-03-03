@@ -1,13 +1,16 @@
+/* Main Skills Section */
 .skills-main-container {
   display: flex;
   flex-direction: row; /* Ensures side-by-side layout */
   justify-content: center;
   align-items: center;
   background-color: #222;
-  padding: 250px 50px;
+  padding: 100px 50px; /* Reduced padding for better visibility */
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   gap: 30px; /* Adds spacing between image and content */
+  flex-wrap: wrap; /* Ensures responsiveness */
+  min-height: 100vh; /* Ensures section does not collapse */
 }
 
 /* Left - Image Section */
@@ -29,16 +32,20 @@
   flex: 1;
   width: 50%;
   text-align: center;
+  display: block; /* Ensures visibility */
 }
 
+/* ✅ Fix: Ensuring Heading is Always Visible */
 .skills-content h2 {
-  padding-bottom: 30px;
+  font-size: 2rem;
   color: white;
+  padding-bottom: 30px;
+  margin-top: 0; /* Ensures heading is not pushed down */
+  display: block; /* Ensures visibility */
 }
 
 /* Skills Category Section */
 .skills-category {
-  background-color: #222;
   background-color: rgba(255, 255, 255, 0.1);
   border: #222 solid;
   padding: 20px;
@@ -74,46 +81,55 @@
   color: #f4a261;
 }
 
-/* Media Queries for Responsive Design */
+/* 🔥 Media Queries for Responsive Design */
 
-/* Stack layout for smaller screens */
+/* Stack layout for tablets */
 @media (max-width: 900px) {
   .skills-main-container {
     flex-direction: column;
-    padding: 200px 20px; /* Adjust padding for small screens */
-    height: 200vh;
+    padding: 80px 20px; /* Reduced padding for visibility */
+    height: auto; /* Removed fixed height */
+    min-height: 100vh; /* Ensures section fills the screen */
   }
 
   .skills-content {
     width: 100%;
   }
 
+  .skills-content h2 {
+    font-size: 1.8rem; /* Adjusted heading size */
+    margin-bottom: 20px; /* Ensures spacing */
+    display: block;
+  }
+
   .skills-image img {
-    max-width: 300px; /* Reduce image size on small screens */
+    max-width: 300px; /* Reduce image size on smaller screens */
   }
 }
 
-/* Additional Media Query for Mobile Devices */
+/* Responsive fixes for mobile devices */
 @media (max-width: 600px) {
   .skills-main-container {
-    padding: 50px 15px; /* Further reduce padding on very small screens */
-    gap: 20px; /* Decrease the gap between image and content */
+    padding: 50px 15px; /* Further reduce padding */
+    gap: 20px; /* Decrease gap between image and content */
   }
 
   .skills-content h2 {
-    font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    font-size: 1.5rem; /* Adjust heading size */
+    margin-bottom: 15px;
+    display: block; /* Ensure visibility */
   }
 
   .skills-category {
-    padding: 15px; /* Reduce padding inside categories */
+    padding: 15px; /* Reduce padding */
   }
 
   .skill-item {
-    font-size: 0.9rem; /* Slightly reduce font size for mobile */
-    padding: 8px; /* Reduce padding to save space */
+    font-size: 0.9rem; /* Reduce font size for mobile */
+    padding: 8px;
   }
 
   .skill-item svg {
-    font-size: 1.2rem; /* Slightly reduce icon size on mobile */
+    font-size: 1.2rem; /* Reduce icon size */
   }
 }

@@ -31,9 +31,15 @@
 .about-text {
   max-width: 600px;
   margin-left: 20px;
+  text-align: left;
 }
+
+/* About Heading */
 .about-text h1 {
   color: #f4a261;
+  font-size: 2.5rem;
+
+  width: 100%;
 }
 
 /* Fade-in Text */
@@ -128,6 +134,8 @@
 
   .about-text {
     margin-left: 0;
+    text-align: center;
+    width: 100%;
   }
 
   .about-photo img {
@@ -137,6 +145,10 @@
   .about-btn {
     width: 80%;
   }
+
+  .about-text h1 {
+    font-size: 2.2rem;
+  }
 }
 
 /* Mobile Devices (Small Screens) */
@@ -145,6 +157,7 @@
     padding: 30px;
     gap: 30px;
     margin-top: 50px;
+    flex-direction: column;
   }
 
   .about-photo img {
@@ -153,6 +166,11 @@
 
   .about-text {
     font-size: large;
+    text-align: center;
+  }
+
+  .about-text h1 {
+    font-size: 2rem;
   }
 
   .fade-in {
@@ -185,6 +203,10 @@
     width: 150px;
   }
 
+  .about-text h1 {
+    font-size: 1.8rem;
+  }
+
   .fade-in {
     font-size: 24px;
   }
@@ -201,4 +223,15 @@
     font-size: 12px;
     padding: 8px 16px;
   }
+}
+
+/* Footer Fix */
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
 }

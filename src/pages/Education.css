@@ -4,10 +4,10 @@
   align-items: center;
   justify-content: center;
   background-color: #222;
-  padding: 250px 20px;
-  color: #ffffff; /* White text */
+  padding: 100px 20px; /* Reduce padding */
+  color: #ffffff;
   flex-wrap: wrap;
-  height: 200vh;
+  min-height: 100vh; /* Ensures section covers the full screen */
   text-align: left;
   gap: 40px;
   font-family: 'Times New Roman', Times, serif;
@@ -20,12 +20,9 @@
   max-width: 600px;
 }
 
+/* Fix text alignment issue */
 .education-content h1 {
   color: white;
-}
-
-.bi {
-  color: #ff914d;
 }
 
 /* Title Styling */
@@ -34,7 +31,7 @@
   color: #ff914d;
   margin-bottom: 20px;
   font-weight: bold;
-  text-transform: uppercase;
+  
 }
 
 /* Education Card */
@@ -73,16 +70,12 @@
   .education-main-container {
     flex-direction: column;
     text-align: center;
-    padding-top: 100px;
+    padding: 60px 20px; /* Adjusted padding for better alignment */
+    gap: 20px;
   }
 
   .education-content {
-    width: 100%;
-  }
-
-  .education-image img {
-    width: 100%;
-    height: auto;
+    width: 90%; /* Allow more space on smaller screens */
   }
 
   .education-title {
@@ -91,14 +84,15 @@
 
   .education-card {
     padding: 15px;
+    width: 90%; /* Ensure cards take up available space */
   }
 }
 
 /* Mobile Devices */
 @media (max-width: 768px) {
   .education-main-container {
-    padding: 50px 20px;
-    gap: 20px;
+    padding: 40px 15px; /* Reduce padding */
+    gap: 15px;
   }
 
   .education-title {
@@ -111,6 +105,7 @@
 
   .education-card {
     padding: 12px;
+    width: 100%; /* Ensure cards are responsive */
   }
 
   .education-institute, .education-duration, .education-gpa {
@@ -125,7 +120,7 @@
 /* Mobile First Optimization */
 @media (max-width: 480px) {
   .education-main-container {
-    padding: 30px 10px;
+    padding: 30px 10px; /* Minimize padding for small screens */
   }
 
   .education-title {

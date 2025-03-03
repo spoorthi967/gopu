@@ -1,187 +1,166 @@
-/* Container for Latest Works */
+/* 🔥 Latest Works Component Styling */
 .latest-works-container {
-  width: 90%; /* Adjust width for responsiveness */
-  max-width: 1200px; /* Restrict max width for readability */
-  margin: 80px auto;
-  padding: 20px;
-  background: #222;
-  border-radius: 10px;
-  height: 200vh;
-  box-shadow: 0px 4px 10px #222;
-  font-family: 'Times New Roman', Times, serif;
+  padding: 50px 20px;
+  background-color: #222; /* Dark background */
+  color: white; /* Text color */
   text-align: center;
-  color: white;
-}
-
-/* Slick slide styling */
-.slick-slide {
+  min-height: 100vh; /* Ensures proper height */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-/* Styling for individual project slides */
-.project-slide {
-  text-align: center;
-  padding: 20px;
+/* 🔹 Heading Styles */
+.latest-works-container h1 {
+  color: #f4a261;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-/* Project title styling */
-.project-slide h2 {
+.latest-works-container h2 {
+  color: white;
   font-size: 1.8rem;
-  margin-bottom: 10px;
-  color: #f4a261;
+  margin-top: 20px;
 }
 
-/* Project subheading styling */
-.project-slide h3 {
+.latest-works-container h3 {
+  color: #f4a261;
   font-size: 1.2rem;
-  color: #f4a261;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
-/* Styling for project list */
-.project-slide ul {
-  list-style: none;
-  padding: 0;
-}
-
-/* Styling for each list item */
-.project-slide ul li {
+/* 🔹 List Styling */
+.latest-works-container ul {
+  list-style-type: none;
+  padding-left: 0;
   font-size: 1rem;
-  color: white;
-  margin: 5px 0;
 }
 
-/* Custom styling for Slick dots (pagination buttons) */
+.latest-works-container ul li {
+  margin-bottom: 10px;
+}
+
+/* Remove "Previous" & "Next" Text */
+.slick-prev::before,
+.slick-next::before {
+  content: '←'; /* Left arrow */
+  font-size: 24px; /* Adjust size */
+  color: white; /* Arrow color */
+}
+
+.slick-next::before {
+  content: '→'; /* Right arrow */
+}
+
+/* Position the arrows properly */
+.slick-prev {
+  left: -50px; /* Adjust position */
+}
+
+.slick-next {
+  right: -50px;
+}
+
+/* Arrow Hover Effect */
+.slick-prev:hover::before, 
+.slick-next:hover::before {
+  color: #f4a261; /* Change color on hover */
+}
+
+/* 🔹 Dots Customization */
 .slick-dots li button:before {
-  color: #007bff !important;
+  color: #f4a261;
 }
 
-/* Back button styling */
+/* 🔥 Back Button */
 .back-button1 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
 }
 
-/* Button styling */
 .btn1 {
-  color: white;
   background-color: #f4a261;
-  font-size: 1rem;
-  padding: 10px 20px;
   border: none;
-  cursor: pointer;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
   border-radius: 5px;
-  transition: background 0.3s ease;
+  cursor: pointer;
 }
 
 .btn1:hover {
-  background-color: #f4a261;
+  background-color: #e76f51;
 }
 
-/* Mobile View - Adjust for Small Screens */
-@media (max-width: 768px) {
-  .latest-works-container {
-    min-height: 200vh;
-    padding: 100px 15px;
-    width: 100%; /* Ensure full width */
-    margin: 20px auto; /* Adjust margin to ensure space around container */
-  }
+/* 📱 Responsive Design */
 
-  .project-slide h2 {
-    font-size: 1.4rem;
-  }
-
-  .project-slide h3 {
-    font-size: 1rem;
-  }
-
-  .project-slide ul li {
-    font-size: 0.9rem;
-  }
-
-  .back-button1 {
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: center;
-    margin-top: 20px; /* Add some space above */
-  }
-
-  .btn1 {
-    font-size: 0.9rem;
-    width: 80%; /* Adjust width of button to ensure it's not too wide */
-    padding: 12px; /* Increase padding for better clickability */
-    text-align: center;
-    max-width: 300px; /* Restrict max width to prevent overflow */
-  }
-}
-
-/* Tablet View - Adjust for Medium Screens */
-@media (max-width: 1024px) {
-  .latest-works-container {
-    max-width: 95%;
-  }
-
-  .project-slide h2 {
-    font-size: 1.6rem;
-  }
-
-  .project-slide h3 {
-    font-size: 1.1rem;
-  }
-
-  .project-slide ul li {
-    font-size: 1rem;
-  }
-
-  .back-button1 {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-/* Desktop View - Large Screens */
-@media (min-width: 1200px) {
-  .latest-works-container {
-    max-width: 900px;
-  }
-
-  .project-slide h2 {
+/* 🔹 Tablet Screens */
+@media (max-width: 900px) {
+  .latest-works-container h1 {
     font-size: 2rem;
   }
 
-  .project-slide h3 {
-    font-size: 1.3rem;
-  }
-
-  .project-slide ul li {
-    font-size: 1.1rem;
-  }
-
-  .btn1 {
-    font-size: 1.1rem;
-  }
-}
-
-/* Extra-Large Screens */
-@media (min-width: 1600px) {
-  .latest-works-container {
-    max-width: 1000px;
-  }
-
-  .project-slide h2 {
-    font-size: 2.2rem;
-  }
-
-  .project-slide h3 {
+  .latest-works-container h2 {
     font-size: 1.5rem;
   }
 
-  .project-slide ul li {
-    font-size: 1.2rem;
+  .latest-works-container h3 {
+    font-size: 1rem;
+  }
+
+  .latest-works-container ul li {
+    font-size: 0.9rem;
   }
 
   .btn1 {
-    font-size: 1.2rem;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  /* Adjust Arrow Positions */
+  .slick-prev {
+    left: -30px;
+  }
+
+  .slick-next {
+    right: -30px;
+  }
+}
+
+/* 🔹 Mobile Screens */
+@media (max-width: 600px) {
+  .latest-works-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .latest-works-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .latest-works-container h3 {
+    font-size: 1rem;
+  }
+
+  .latest-works-container ul li {
+    font-size: 0.85rem;
+  }
+
+  .btn1 {
+    font-size: 0.9rem;
+  }
+
+  /* Adjust Arrow Sizes */
+  .slick-prev, 
+  .slick-next {
+    font-size: 20px !important;
+  }
+
+  .slick-prev {
+    left: -20px;
+  }
+
+  .slick-next {
+    right: -20px;
   }
 }

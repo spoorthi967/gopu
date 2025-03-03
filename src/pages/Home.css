@@ -1,5 +1,4 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
-
 /* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
@@ -14,12 +13,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200vh;
-  background: #222;
+  flex-direction: column; /* Stack items in mobile */
+  height: 100vh; /* Prevent unnecessary scrolling */
+  padding: 20px;
 }
 
+/* Content Section */
 .content {
-  width: 80%;
+  width: 100%;
   max-width: 1200px;
   background: #222;
   color: white;
@@ -53,7 +54,8 @@ body {
 }
 
 /* Social Icons */
-.social-icons i {
+.bi {
+  color:#f4a261;
   font-size: 1.2rem;
   margin-left: 10px;
   cursor: pointer;
@@ -68,19 +70,38 @@ body {
   margin-top: 2rem;
 }
 
+/* Ensure Image is Centered */
+.image-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* Text Section */
 .text-section {
-  max-width: 500px;
+  max-width: 800px;
+  text-align: center;
 }
 
 .text-section p {
-  font-size: 1rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   color: #bbb;
 }
 
 .text-section h1 {
-  font-size: 2.5rem;
+  font-size: 0.5rem;
   font-weight: bold;
+  width: 500px;
 }
 
 .text-section span {
@@ -103,46 +124,37 @@ body {
   text-decoration: none;
 }
 
-.image-section img {
-  width: 250px;
-  height: 250px;
-  border-radius: 15px;
-  object-fit: cover;
+/* Previous / Next Arrows */
+.arrow {
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  position: absolute;
 }
 
-/* Responsive Design */
+.arrow-left {
+  left: 10px;
+}
 
-/* Mobile */
+.arrow-right {
+  right: 10px;
+}
+
+/* Hide Text "Previous" and "Next" */
+.arrow span {
+  display: none;
+}
+
+/* Mobile - Show Image First */
 @media screen and (max-width: 768px) {
   .home-container {
-    height: auto;
-    padding: 20px;
-  }
-
-  .content {
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 1.5rem;
-  }
-
-  .logo {
-    font-size: 1.25rem;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column; /* Image first, then text */
+    align-items: center;
+    text-align: center;
   }
 
   .main-section {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    flex-direction: column-reverse;
   }
 
   .text-section {
@@ -150,23 +162,20 @@ body {
     max-width: 100%;
   }
 
-  .text-section h1 {
-    font-size: 2rem;
+  /* Arrows Positioning */
+  .arrow {
+    font-size: 1.8rem;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
-  .text-section p {
-    font-size: 0.9rem;
+  .arrow-left {
+    left: 10px;
   }
 
-  .image-section img {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-  }
-
-  .btn {
-    padding: 8px 15px;
-    font-size: 0.9rem;
+  .arrow-right {
+    right: 10px;
   }
 }
 
@@ -225,7 +234,7 @@ body {
 /* Desktop */
 @media screen and (min-width: 1025px) {
   .home-container {
-    height: 200vh;
+    height: 100vh;
   }
 
   .content {
