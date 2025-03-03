@@ -113,13 +113,10 @@
 /* Slick Carousel Customization */
 .slick-prev,
 .slick-next {
-  color: #f4a261;
-  z-index: 1000;
+  color: #222;
 }
 
-.slick-dots li button:before {
-  color: #f4a261;
-}
+
 
 .slick-slide {
   transition: transform 0.3s ease-in-out;
@@ -165,22 +162,6 @@
   .experience-list li {
     font-size: 14px;
   }
-
-  /* Hide "Previous" and "Next" Text on Mobile */
-  .slick-prev, .slick-next {
-    display: none; /* Hide text */
-  }
-
-  /* Show Arrow Icons Only */
-  .slick-prev:before, .slick-next:before {
-    content: ''; /* Removes text */
-    font-size: 2rem; /* Adjust arrow size */
-    color: #f4a261; /* Arrow color */
-  }
-
-  .slick-prev:hover:before, .slick-next:hover:before {
-    color: white; /* Hover color change */
-  }
 }
 
 /* Mobile Devices (Additional Responsiveness) */
@@ -215,22 +196,6 @@
   .experience-list li {
     font-size: 14px;
   }
-
-  /* Hide "Previous" and "Next" Text on Mobile */
-  .slick-prev, .slick-next {
-    display: none; /* Hide text */
-  }
-
-  /* Show Arrow Icons Only */
-  .slick-prev:before, .slick-next:before {
-    content: ''; /* Removes text */
-    font-size: 2rem; /* Adjust arrow size */
-    color: #f4a261; /* Arrow color */
-  }
-
-  .slick-prev:hover:before, .slick-next:hover:before {
-    color: white; /* Hover color change */
-  }
 }
 
 @media (max-width: 480px) {
@@ -259,21 +224,5 @@
 
   .experience-list li {
     font-size: 12px;
-  }
-
-  /* Hide "Previous" and "Next" Text on Mobile */
-  .slick-prev, .slick-next {
-    display: none; /* Hide text */
-  }
-
-  /* Show Arrow Icons Only */
-  .slick-prev:before, .slick-next:before {
-    content: ''; /* Removes text */
-    font-size: 1.5rem; /* Adjust arrow size */
-    color: #f4a261; /* Arrow color */
-  }
-
-  .slick-prev:hover:before, .slick-next:hover:before {
-    color: white; /* Hover color change */
   }
 }

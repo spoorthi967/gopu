@@ -50,12 +50,17 @@
   display: block; /* Ensure the arrows are shown */
 }
 
+.slick-next::before {
+  content: '' !important; /* Right arrow */
+}
+
+/* Position the arrows properly */
 .slick-prev {
   left: -50px; /* Adjust position */
 }
 
 .slick-next {
-  right: -50px; /* Adjust position */
+  right: -50px;
 }
 
 /* Arrow Hover Effect */
@@ -146,18 +151,17 @@
     font-size: 0.9rem;
   }
 
-  /* Adjust Arrow Sizes and Positions */
+  /* Adjust Arrow Sizes */
   .slick-prev, 
   .slick-next {
-    font-size: 30px !important; /* Adjust size of arrows */
-    color: white; /* Arrow color */
+    font-size: 20px !important;
   }
 
   .slick-prev {
-    left: -20px; /* Adjust position */
+    left: -20px;
   }
 
   .slick-next {
-    right: -20px; /* Adjust position */
+    right: -20px;
   }
 }

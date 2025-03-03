@@ -100,38 +100,9 @@ p {
   text-decoration: underline;
 }
 
-/* Remove "Previous" & "Next" Text (Only show arrows) */
-.slick-prev::before,
-.slick-next::before {
-  content: '' !important; /* Remove previous/next text */
-  font-size: 24px; /* Adjust size */
-  color: white; /* Arrow color */
-  display: block; /* Ensure the arrows are shown */
-}
+/* Media Queries */
 
-/* Position the arrows properly */
-.slick-prev {
-  left: -50px; /* Adjust position */
-}
-
-.slick-next {
-  right: -50px;
-}
-
-/* Arrow Hover Effect */
-.slick-prev:hover::before, 
-.slick-next:hover::before {
-  color: #f4a261; /* Change color on hover */
-}
-
-/* 🔹 Dots Customization */
-.slick-dots li button:before {
-  color: #f4a261;
-}
-
-/* 📱 Responsive Design */
-
-/* 🔹 For small devices like phones (max-width 600px) */
+/* For small devices like phones (max-width 600px) */
 @media (max-width: 600px) {
   .moreabout-container {
     padding-top: 150px;
@@ -160,23 +131,9 @@ p {
     font-size: 14px;
     padding: 8px 16px; /* Adjust padding to fit on smaller screens */
   }
-
-  /* Adjust Arrow Sizes */
-  .slick-prev, 
-  .slick-next {
-    font-size: 20px !important;
-  }
-
-  .slick-prev {
-    left: -20px;
-  }
-
-  .slick-next {
-    right: -20px;
-  }
 }
 
-/* 🔹 For medium devices like tablets (max-width 768px) */
+/* For medium devices like tablets (max-width 768px) */
 @media (max-width: 768px) {
   .slick-slider {
     width: 85%;
@@ -197,23 +154,9 @@ p {
   .back-link {
     width: 70%;
   }
-
-  /* Adjust Arrow Sizes */
-  .slick-prev, 
-  .slick-next {
-    font-size: 22px !important;
-  }
-
-  .slick-prev {
-    left: -30px;
-  }
-
-  .slick-next {
-    right: -30px;
-  }
 }
 
-/* 🔹 For large screens */
+/* For large screens */
 @media (min-width: 1200px) {
   .slick-slider {
     width: 80%;

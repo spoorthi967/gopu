@@ -133,20 +133,3 @@
     font-size: 1.2rem; /* Reduce icon size */
   }
 }
-
-/* Hide Previous and Next Text and Show Only Arrows on Mobile */
-@media (max-width: 600px) {
-  .slick-prev,
-  .slick-next {
-    font-size: 0; /* Hides the text */
-    width: 40px; /* Adjust width of the arrows */
-    height: 40px; /* Adjust height of the arrows */
-    background: transparent; /* Remove background color */
-  }
-
-  .slick-prev::before,
-  .slick-next::before {
-    font-size: 30px; /* Adjust size of arrow icons */
-    color: #f4a261; /* Arrow icon color */
-  }
-}

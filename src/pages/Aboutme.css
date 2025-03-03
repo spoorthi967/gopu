@@ -1,25 +1,39 @@
 /* About Container */
 .about-container {
   display: flex;
+  flex-direction: column; /* Ensures stacking on smaller screens */
   align-items: center;
   justify-content: center;
-  gap: 80px;
-  padding: 50px;
+  gap: 40px;
+  padding: 50px 20px;
   background-color: #222;
   color: #fff;
-  font-size: x-large;
+  font-size: large;
   margin-top: 100px;
-  flex-wrap: wrap; /* Allows better responsiveness */
-  text-align: left;
+  text-align: center; /* Centers content for better mobile readability */
   font-family: 'Times New Roman', Times, serif;
 }
 
+/* About Title */
+.about-text h1 {
+  color: #f4a261;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 /* About Photo */
+.about-photo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .about-photo img {
   width: 200px;
-  height: auto;
+  max-width: 100%;
   border-radius: 10px;
-  object-fit: cover; /* Ensures proper image fitting */
+  object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -30,21 +44,11 @@
 /* About Text Section */
 .about-text {
   max-width: 600px;
-  margin-left: 20px;
-  text-align: left;
-}
-
-/* About Heading */
-.about-text h1 {
-  color: #f4a261;
-  font-size: 2.5rem;
-
-  width: 100%;
 }
 
 /* Fade-in Text */
 .fade-in {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: bold;
   color: #e91e63;
   animation: fadeIn 1s ease-in-out;
@@ -53,23 +57,18 @@
 /* Highlight Text */
 .highlight {
   color: #f4a261;
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 10px;
 }
 
 /* Slide-Up Animation */
 .slide-up {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 10px;
   line-height: 1.6;
   opacity: 0;
   transform: translateY(20px);
   animation: slideUp 0.8s ease-in-out forwards;
-}
-
-.slide-up.delay {
-  margin-top: 20px;
-  animation-delay: 0.5s;
 }
 
 /* About Button */
@@ -83,11 +82,23 @@
   margin-top: 20px;
   border-radius: 5px;
   transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  display: inline-block;
 }
 
 .about-btn:hover {
-  background-color: #f4a261;
+  background-color: #e67e22;
   transform: scale(1.05);
+}
+
+/* Fix Footer Overlap Issue */
+footer {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-color: #111;
+  margin-top: 50px; /* Adds spacing between image and footer */
 }
 
 /* Animations */
@@ -113,98 +124,38 @@
 
 /* Responsive Design */
 
-/* Large Screens (Desktops) */
+/* Large Screens */
 @media (max-width: 1200px) {
   .about-container {
-    gap: 50px;
-  }
-
-  .about-photo img {
-    width: 180px;
+    gap: 30px;
   }
 }
 
-/* Tablets (Medium Screens) */
+/* Tablets */
 @media (max-width: 992px) {
   .about-container {
-    flex-direction: column;
-    text-align: center;
-    padding-top: 100px;
+    padding: 50px 30px;
   }
 
   .about-text {
-    margin-left: 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  .about-photo img {
-    width: 220px;
-  }
-
-  .about-btn {
-    width: 80%;
-  }
-
-  .about-text h1 {
-    font-size: 2.2rem;
+    font-size: medium;
   }
 }
 
-/* Mobile Devices (Small Screens) */
+/* Mobile Devices */
 @media (max-width: 768px) {
   .about-container {
-    padding: 30px;
-    gap: 30px;
-    margin-top: 50px;
-    flex-direction: column;
-  }
-
-  .about-photo img {
-    width: 180px;
-  }
-
-  .about-text {
-    font-size: large;
-    text-align: center;
-  }
-
-  .about-text h1 {
-    font-size: 2rem;
-  }
-
-  .fade-in {
-    font-size: 28px;
-  }
-
-  .highlight {
-    font-size: 20px;
-  }
-
-  .slide-up {
-    font-size: 16px;
-  }
-
-  .about-btn {
-    font-size: 14px;
-    padding: 10px 20px;
-    width: 100%;
-  }
-}
-
-/* Extra Small Devices (Phones) */
-@media (max-width: 480px) {
-  .about-container {
-    padding: 20px;
+    padding: 30px 20px;
     gap: 20px;
-  }
-
-  .about-photo img {
-    width: 150px;
+    margin-top: 60px;
   }
 
   .about-text h1 {
     font-size: 1.8rem;
+  }
+
+  .about-photo img {
+    width: 180px;
   }
 
   .fade-in {
@@ -220,18 +171,51 @@
   }
 
   .about-btn {
-    font-size: 12px;
-    padding: 8px 16px;
+    font-size: 14px;
+    padding: 10px 20px;
+    width: 90%;
+  }
+
+  /* Ensure Footer Stays Below */
+  footer {
+    margin-top: 80px;
   }
 }
 
-/* Footer Fix */
-footer {
-  position: relative;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-  padding: 20px;
-  background-color: #222;
-  color: white;
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .about-container {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .about-photo img {
+    width: 150px;
+  }
+
+  .about-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .fade-in {
+    font-size: 22px;
+  }
+
+  .highlight {
+    font-size: 16px;
+  }
+
+  .slide-up {
+    font-size: 14px;
+  }
+
+  .about-btn {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  /* Ensures Footer is Pushed Down */
+  footer {
+    margin-top: 100px;
+  }
 }

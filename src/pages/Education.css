@@ -1,31 +1,29 @@
-/* Education Section Main Container */
+/* === 🔹 Education Section Main Container 🔹 === */
 .education-main-container {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #222;
-  padding: 100px 20px; /* Reduce padding */
+  padding: 100px 20px;
   color: #ffffff;
   flex-wrap: wrap;
-  min-height: 100vh; /* Ensures section covers the full screen */
+  min-height: 100vh;
   text-align: left;
   gap: 40px;
   font-family: 'Times New Roman', Times, serif;
 }
 
-/* Education Content */
+/* === 🔹 Education Content Styling 🔹 === */
 .education-content {
   width: 50%;
   text-align: center;
   max-width: 600px;
 }
 
-/* Fix text alignment issue */
 .education-content h1 {
   color: white;
 }
 
-/* Title Styling */
 .education-title {
   font-size: 2.2rem;
   color: #ff914d;
@@ -33,21 +31,22 @@
   font-weight: bold;
 }
 
-/* Education Card */
+/* === 🔹 Education Card Styling 🔹 === */
 .education-card {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 10px;
   margin: 20px 0;
   text-align: left;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .education-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0px 4px 10px rgba(255, 145, 77, 0.3);
 }
 
-/* Card Text */
+/* === 🔹 Text Styling 🔹 === */
 .education-institute, .education-duration, .education-gpa {
   font-size: 1.1rem;
   margin-top: 10px;
@@ -55,48 +54,92 @@
   line-height: 1.6;
 }
 
-/* Icon Styling */
+/* === 🔹 Icon Styling 🔹 === */
 .education-card i {
   margin-right: 10px;
   color: #ff914d;
   font-size: 1.2rem;
 }
 
-/* Hide Text (Previous & Next) */
-.education-prev, .education-next {
-  display: none; /* Hide the text */
+/* === 🔹 Slick Slider Styling 🔹 === */
+.slick-slider {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
 }
 
-/* Show Arrow Icons */
-.education-prev-icon, .education-next-icon {
-  display: inline-block; /* Show icons */
-  font-size: 2rem; /* Adjust size as needed */
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Optional: Adjust button spacing */
-.education-prev-icon, .education-next-icon {
-  padding: 10px; /* Space around the arrows */
-  color: #ff914d; /* Arrow color */
-  transition: color 0.3s ease-in-out; /* Smooth color transition */
+/* === 🔹 Fix Slick Arrows Styling 🔹 === */
+.slick-prev, .slick-next {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.education-prev-icon:hover, .education-next-icon:hover {
-  color: #ffffff; /* Change color on hover */
+/* Hide arrows initially and show on hover */
+.slick-prev, .slick-next {
+  opacity: 0.5;
+}
+.slick-prev:hover, .slick-next:hover {
+  opacity: 1;
 }
 
-/* Responsive Design */
+/* === 🔹 Slick Arrow Icons 🔹 === */
+.slick-prev::before, .slick-next::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: white;
+  background: #ff914d; /* Highlighted background */
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
 
-/* Tablet and Below */
+/* Fix FontAwesome Icons */
+.slick-prev::before {
+  content: "\f104"; /* Left Arrow */
+}
+.slick-next::before {
+  content: "\f105"; /* Right Arrow */
+}
+
+/* === 🔹 Positioning Fix for Arrows 🔹 === */
+.slick-prev {
+  left: -40px;
+}
+.slick-next {
+  right: -40px;
+}
+
+/* === 🔹 Responsive Design 🔹 === */
+
+/* Tablet & Mobile */
 @media (max-width: 992px) {
   .education-main-container {
     flex-direction: column;
     text-align: center;
-    padding: 60px 20px; /* Adjusted padding for better alignment */
+    padding: 60px 20px;
     gap: 20px;
   }
 
   .education-content {
-    width: 90%; /* Allow more space on smaller screens */
+    width: 90%;
   }
 
   .education-title {
@@ -105,70 +148,33 @@
 
   .education-card {
     padding: 15px;
-    width: 90%; /* Ensure cards take up available space */
+    width: 90%;
   }
 
-  .education-prev-icon, .education-next-icon {
-    font-size: 1.5rem; /* Adjust arrow size for tablets */
+  .slick-prev {
+    left: -20px;
   }
-}
-
-/* Mobile Devices */
-@media (max-width: 768px) {
-  .education-main-container {
-    padding: 40px 15px; /* Reduce padding */
-    gap: 15px;
-  }
-
-  .education-title {
-    font-size: 1.6rem;
-  }
-
-  .education-content h1 {
-    font-size: 1.8rem;
-  }
-
-  .education-card {
-    padding: 12px;
-    width: 100%; /* Ensure cards are responsive */
-  }
-
-  .education-institute, .education-duration, .education-gpa {
-    font-size: 1rem;
-  }
-
-  .education-card i {
-    font-size: 1rem;
-  }
-
-  .education-prev-icon, .education-next-icon {
-    font-size: 1.2rem; /* Adjust arrow size for mobile */
+  .slick-next {
+    right: -20px;
   }
 }
 
-/* Mobile First Optimization */
-@media (max-width: 480px) {
-  .education-main-container {
-    padding: 30px 10px; /* Minimize padding for small screens */
-  }
-
+/* Mobile View */
+@media (max-width: 576px) {
   .education-title {
     font-size: 1.5rem;
   }
 
-  .education-card {
-    padding: 10px;
-  }
-
   .education-institute, .education-duration, .education-gpa {
-    font-size: 0.9rem;
-  }
-
-  .education-card i {
     font-size: 1rem;
   }
 
-  .education-prev-icon, .education-next-icon {
-    font-size: 1rem; /* Adjust arrow size for very small screens */
+  .slick-prev, .slick-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .slick-prev::before, .slick-next::before {
+    font-size: 1.2rem;
   }
 }

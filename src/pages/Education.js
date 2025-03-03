@@ -18,8 +18,14 @@ const Education = () => {
   };
 
   return (
-    <div className="education-main-container">
     
+    <div className="education-main-container">
+
+
+<button class="slick-prev">
+  <i class="fa fa-arrow-left"></i> 
+</button>
+     
 
       {/* Right Section - Sliding Education Content */}
       <div className="education-content">
@@ -60,6 +66,12 @@ const Education = () => {
             </p>
           </div>
         </Slider>
+       
+
+
+
+
+<i class=" slick-next" aria-label="Next bi bi-arrow-left-circle"></i>
       </div>
     </div>
   );
