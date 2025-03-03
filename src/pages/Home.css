@@ -1,4 +1,5 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
 /* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
@@ -148,18 +149,48 @@ body {
 /* Mobile - Show Image First */
 @media screen and (max-width: 768px) {
   .home-container {
-    flex-direction: column; /* Image first, then text */
+    flex-direction: column; /* Stack items vertically, image on top */
     align-items: center;
     text-align: center;
+    height: auto; /* Adjust to content height */
   }
 
+  /* Reorder Main Section for Mobile */
   .main-section {
-    flex-direction: column-reverse;
+    flex-direction: column; /* Stack text below the image */
+    align-items: center;
   }
 
   .text-section {
-    text-align: center;
     max-width: 100%;
+    text-align: center;
+    margin-top: 1rem; /* Space between image and text */
+  }
+
+  .image-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .image-section img {
+    width: 80%; /* Adjust the image size */
+    max-width: 300px; /* Ensure image doesn't get too big */
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  /* Button */
+  .btn {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f39c12;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
   }
 
   /* Arrows Positioning */

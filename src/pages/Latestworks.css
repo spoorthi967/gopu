@@ -41,25 +41,21 @@
   margin-bottom: 10px;
 }
 
-/* Remove "Previous" & "Next" Text */
+/* Remove "Previous" & "Next" Text (Only show arrows) */
 .slick-prev::before,
 .slick-next::before {
-  content: '←'; /* Left arrow */
+  content: '' !important; /* Remove previous/next text */
   font-size: 24px; /* Adjust size */
   color: white; /* Arrow color */
+  display: block; /* Ensure the arrows are shown */
 }
 
-.slick-next::before {
-  content: '→'; /* Right arrow */
-}
-
-/* Position the arrows properly */
 .slick-prev {
   left: -50px; /* Adjust position */
 }
 
 .slick-next {
-  right: -50px;
+  right: -50px; /* Adjust position */
 }
 
 /* Arrow Hover Effect */
@@ -150,17 +146,18 @@
     font-size: 0.9rem;
   }
 
-  /* Adjust Arrow Sizes */
+  /* Adjust Arrow Sizes and Positions */
   .slick-prev, 
   .slick-next {
-    font-size: 20px !important;
+    font-size: 30px !important; /* Adjust size of arrows */
+    color: white; /* Arrow color */
   }
 
   .slick-prev {
-    left: -20px;
+    left: -20px; /* Adjust position */
   }
 
   .slick-next {
-    right: -20px;
+    right: -20px; /* Adjust position */
   }
 }
