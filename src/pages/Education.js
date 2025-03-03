@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Education.css";
-import education1 from "../Images/education1.jpg";
+
 
 const Education = () => {
   const settings = {
@@ -19,10 +19,7 @@ const Education = () => {
 
   return (
     <div className="education-main-container">
-      {/* Left Section - Image */}
-      <div className="education-image">
-        <img src={education1} alt="Education" />
-      </div>
+    
 
       {/* Right Section - Sliding Education Content */}
       <div className="education-content">

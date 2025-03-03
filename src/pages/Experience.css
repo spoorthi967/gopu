@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap; /* Improves responsiveness */
-  padding: 40px 80px; /* Adjusted padding */
-  background-color: #000; /* Black background */
+  padding: 40px 80px;
+  background-color: #222; /* Black background */
   color: #fff; /* White text */
   min-height: 100vh;
   gap: 40px; /* Adds spacing between elements */
@@ -13,22 +13,6 @@
   margin-top: 50px;
 }
 
-/* Left Section - Image */
-.experience-image {
-  flex: 1;
-  max-width: 500px;
- 
-}
-
-.experience-image img {
-  width: 100%;
-  border-radius: 10px; /* Soft rounded edges */
-  transition: transform 0.3s ease-in-out;
-}
-
-.experience-image img:hover {
-  transform: scale(1.05);
-}
 
 /* Right Section - Content */
 .experience-content {
@@ -36,7 +20,6 @@
   max-width: 800px;
   height: auto;
   text-align: left;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Title Styling */
@@ -46,23 +29,21 @@
   color: white;
   margin-bottom: 30px;
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .experience-title i {
   margin-right: 10px;
-  color: #e91e63;
-  font-family: 'Times New Roman', Times, serif;
+  color: #f4a261;
 }
 
 /* Experience Card Styles */
 .experience-card {
-  background: #111; /* Dark gray background for cards */
+  background: #222; /* Dark gray background for cards */
   padding: 20px;
   border-radius: 10px;
-
+  background-color: rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease-in-out;
-  font-family: 'Times New Roman', Times, serif;
+
 }
 
 .experience-card:hover {
@@ -72,16 +53,14 @@
 /* Card Title */
 .experience-card h2 {
   font-size: 22px;
-  color: #e91e63; /* Matches the title color */
+  color: #f4a261;
   display: flex;
   align-items: center;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .experience-card h2 i {
   margin-right: 8px;
   color: #f4a261;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Company Name */
@@ -91,13 +70,11 @@
   color: #f4a261;
   display: flex;
   align-items: center;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .experience-company i {
   margin-right: 8px;
   color: #e9c46a;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Duration */
@@ -107,20 +84,17 @@
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .experience-duration i {
   margin-right: 8px;
-  color: #e91e63;
-  font-family: 'Times New Roman', Times, serif;
+  color: #f4a261;
 }
 
 /* Experience List Styles */
 .experience-list {
   list-style: none;
   padding: 0;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .experience-list li {
@@ -129,24 +103,22 @@
   margin-bottom: 8px;
   display: flex;
   align-items: center;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .experience-list li i {
   margin-right: 8px;
-  color: #e91e63;
-  font-family: 'Times New Roman', Times, serif;
+  color: #f4a261;
 }
 
 /* Slick Carousel Customization */
 .slick-prev,
 .slick-next {
-  color: #e91e63 !important;
+  color: #f4a261;
   z-index: 1000;
 }
 
 .slick-dots li button:before {
-  color: #e91e63 !important;
+  color: #f4a261;
 }
 
 .slick-slide {
@@ -161,7 +133,6 @@
 @media (max-width: 992px) {
   .experience-main-container {
     flex-direction: column;
-    min-height: 100vh;
     text-align: center;
     padding: 40px 20px;
   }

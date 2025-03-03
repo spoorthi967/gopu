@@ -5,7 +5,7 @@
   justify-content: center;
   gap: 80px;
   padding: 50px;
-  background-color: #000;
+  background-color: #222;
   color: #fff;
   font-size: x-large;
   margin-top: 100px;
@@ -16,11 +16,10 @@
 
 /* About Photo */
 .about-photo img {
-  width: 150px;
+  width: 200px;
   height: auto;
   border-radius: 10px;
   object-fit: cover; /* Ensures proper image fitting */
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Adds depth */
   transition: transform 0.3s ease-in-out;
 }
 
@@ -33,9 +32,10 @@
   max-width: 600px;
   margin-left: 20px;
 }
-.about-text h1{
-  color:#f4a261;
+.about-text h1 {
+  color: #f4a261;
 }
+
 /* Fade-in Text */
 .fade-in {
   font-size: 36px;
@@ -68,7 +68,7 @@
 
 /* About Button */
 .about-btn {
-  background-color: #e91e63;
+  background-color: #f4a261;
   color: white;
   padding: 12px 24px;
   font-size: 16px;
@@ -80,7 +80,7 @@
 }
 
 .about-btn:hover {
-  background-color: #e91e63;
+  background-color: #f4a261;
   transform: scale(1.05);
 }
 
@@ -106,11 +106,24 @@
 }
 
 /* Responsive Design */
+
+/* Large Screens (Desktops) */
+@media (max-width: 1200px) {
+  .about-container {
+    gap: 50px;
+  }
+
+  .about-photo img {
+    width: 180px;
+  }
+}
+
+/* Tablets (Medium Screens) */
 @media (max-width: 992px) {
   .about-container {
     flex-direction: column;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 100px;
   }
 
   .about-text {
@@ -118,11 +131,74 @@
   }
 
   .about-photo img {
-    width: 200px;
-    height: 350px;
+    width: 220px;
   }
 
   .about-btn {
+    width: 80%;
+  }
+}
+
+/* Mobile Devices (Small Screens) */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 30px;
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .about-photo img {
+    width: 180px;
+  }
+
+  .about-text {
+    font-size: large;
+  }
+
+  .fade-in {
+    font-size: 28px;
+  }
+
+  .highlight {
+    font-size: 20px;
+  }
+
+  .slide-up {
+    font-size: 16px;
+  }
+
+  .about-btn {
+    font-size: 14px;
+    padding: 10px 20px;
     width: 100%;
+  }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 480px) {
+  .about-container {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .about-photo img {
+    width: 150px;
+  }
+
+  .fade-in {
+    font-size: 24px;
+  }
+
+  .highlight {
+    font-size: 18px;
+  }
+
+  .slide-up {
+    font-size: 14px;
+  }
+
+  .about-btn {
+    font-size: 12px;
+    padding: 8px 16px;
   }
 }

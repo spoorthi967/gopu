@@ -5,9 +5,10 @@
   margin: 0 auto;
   text-align: center;
   padding: 20px;
-  background: #000000; /* Dark background color */
+  background: #222; /* Dark background color */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   margin-top: 50px; /* Reduced margin-top for smaller screens */
   color: white; /* Text color for readability */
   box-sizing: border-box; /* Ensures padding doesn't affect width */
@@ -26,7 +27,7 @@
 }
 
 .contact-container a {
-  color: #e63946; /* Accent color for links */
+  color: #f4a261;
   text-decoration: none;
   font-weight: bold;
 }

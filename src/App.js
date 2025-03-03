@@ -11,25 +11,20 @@ import Latestworks from "./pages/Latestworks";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
-import logo1 from './Images/logo1.png';
+import logo3 from './Images/logo4.png';
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <Router basename="/gopu">
-      {/* Navbar */}
       <header className="navbar-container">
         <div className="logo">
-          <img src={logo1} alt="Logo" />
+          <img src={logo3} alt="Logo" />
         </div>
-
-        {/* Mobile Menu Toggle */}
         <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
           <i className={menuOpen ? "bi bi-x-lg" : "bi bi-list"}></i>
         </div>
-
-        {/* Navigation Menu */}
         <nav className={`nav-menu ${menuOpen ? "show" : ""}`}>
           <ul>
             <li><Link to="/" onClick={() => setMenuOpen(false)}><i className="bi bi-house-door"></i> HOME</Link></li>
@@ -41,8 +36,6 @@ const App = () => {
           </ul>
         </nav>
       </header>
-
-      {/* Routes */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<Aboutme />} />
@@ -53,8 +46,6 @@ const App = () => {
         <Route path="/moreabout" element={<Moreabout />} />
         <Route path="/latestworks" element={<Latestworks />} />
       </Routes>
-
-      {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
           <p>© 2025 Gopu Spoorthi. All Rights Reserved.</p>

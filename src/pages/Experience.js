@@ -20,10 +20,7 @@ const Experience = () => {
 
   return (
     <div className="experience-main-container">
-      {/* Left Section - Image */}
-      <div className="experience-image">
-        <img src={experience} alt="Experience" />
-      </div>
+  
 
       {/* Right Section - Sliding Experience Content */}
       <div className="experience-content">

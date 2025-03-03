@@ -3,7 +3,7 @@
   flex-direction: row; /* Ensures side-by-side layout */
   justify-content: center;
   align-items: center;
-  background-color: #000000;
+  background-color: #222;
   padding: 250px 50px;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
@@ -38,11 +38,12 @@
 }
 
 .skills-category {
-  background-color: rgb(0, 0, 0);
-  border: #242121 solid;
+  background-color: #222;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: #222 solid;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px #222;
 }
 
 .skills-category h3 {
@@ -62,7 +63,7 @@
   align-items: center;
   gap: 8px;
   padding: 10px;
-  background: black;
+  background: #111111;
   border-radius: 8px;
   font-size: 1rem;
   color: white;
@@ -70,7 +71,7 @@
 
 .skill-item svg {
   font-size: 1.5rem;
-  color: #ec4c59;
+  color: #f4a261;
 }
 
 /* Media Queries for Responsive Design */

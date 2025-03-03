@@ -4,14 +4,17 @@
   max-width: 1200px; /* Restrict max width for readability */
   margin: 80px auto;
   padding: 20px;
-  background: #000000;
+  background: #222;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px #222;
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
 }
 
 
+.latest-works-container{
+  color:white;
+}
 
 /* Slick slide styling */
 .slick-slide {
@@ -36,7 +39,7 @@
 /* Project subheading styling */
 .project-slide h3 {
   font-size: 1.2rem;
-  color: #e91e63;
+  color: #f4a261;
   margin-bottom: 15px;
 }
 
@@ -67,7 +70,7 @@
 /* Button styling */
 .btn1 {
   color: white;
-  background-color: #e91e63;
+  background-color: #f4a261;
   font-size: 1rem;
   padding: 10px 20px;
   border: none;

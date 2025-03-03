@@ -3,45 +3,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
-  padding: 50px;
-  color: white;
-  padding-top: 50px;
-  flex-wrap: wrap; /* Improves responsiveness */
+  background-color: #222;
+  padding: 150px;
+  color: #ffffff; /* White text */
+  flex-wrap: wrap;
   text-align: left;
   gap: 40px;
   font-family: 'Times New Roman', Times, serif;
 }
 
-/* Education Image */
-.education-image img {
-  width: 400px;
-  height: auto;
-  font-family: 'Times New Roman', Times, serif;
-  border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
-  transition: transform 0.3s ease-in-out;
-}
 
-.education-image img:hover {
-  transform: scale(1.05);
-}
 
 /* Education Content */
 .education-content {
   width: 50%;
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-  height: auto;
   max-width: 600px;
+}
+
+.education-content h1{
+  color:white;
+}
+
+
+.bi{
+  color:#ff914d;
 }
 
 /* Title Styling */
 .education-title {
   font-size: 2.2rem;
-  font-family: 'Times New Roman', Times, serif;
-  color: white;
+  color: #ff914d;
   margin-bottom: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -53,9 +45,7 @@
   padding: 20px;
   border-radius: 10px;
   margin: 20px 0;
-  font-family: 'Times New Roman', Times, serif;
   text-align: left;
-  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -67,7 +57,6 @@
 .education-institute, .education-duration, .education-gpa {
   font-size: 1.1rem;
   margin-top: 10px;
-  font-family: 'Times New Roman', Times, serif;
   font-weight: 500;
   line-height: 1.6;
 }
@@ -75,7 +64,7 @@
 /* Icon Styling */
 .education-card i {
   margin-right: 10px;
-  color: #e91e63;
+  color:  #ff914d;
   font-size: 1.2rem;
 }
 
@@ -83,7 +72,6 @@
 @media (max-width: 992px) {
   .education-main-container {
     flex-direction: column;
-    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     padding-top: 100px;
   }

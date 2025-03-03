@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #000000;
+  background-color: #222;
   padding-top: 50px;
   padding-bottom: 50px;
   font-family: 'Times New Roman', Times, serif;
@@ -26,7 +26,7 @@
 
 /* Each slide content */
 .about-section, .skills-section, .goals-section {
-  background: rgb(0, 0, 0);
+  background: #222;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -73,14 +73,14 @@ p {
 .skills-list .icon {
   margin-right: 10px;
   font-size: 20px;
-  color: #e91e63;
+  color: #f4a261;
 }
 
 /* Back Link Section */
 .back-link {
   text-align: center;
   margin-top: 20px;
-  background-color: #e91e63;
+  background-color: #f4a261;
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 5px;
