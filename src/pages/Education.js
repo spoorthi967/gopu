@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Education.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
 const Education = () => {
@@ -23,7 +25,7 @@ const Education = () => {
 
 
 <button class="slick-prev">
-  <i class="fa fa-arrow-left"></i> 
+ <i class="bi bi-arrow-left-circle-fill"></i>
 </button>
      
 
@@ -67,11 +69,11 @@ const Education = () => {
           </div>
         </Slider>
        
+        <button class="slick-next">
+ <i class="bi bi-arrow-right-circle-fill"></i>
+</button>
 
 
-
-
-<i class=" slick-next" aria-label="Next bi bi-arrow-left-circle"></i>
       </div>
     </div>
   );

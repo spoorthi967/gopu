@@ -1,5 +1,4 @@
-
-
+/* .contact-container styles */
 .contact-container {
   max-width: 500px;
   margin: 0 auto;
@@ -8,23 +7,24 @@
   background: #222; /* Dark background color */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 50px; /* Reduced margin-top for smaller screens */
+  margin-top: 250px; /* Default margin-top for larger screens */
   color: white; /* Text color for readability */
   box-sizing: border-box; /* Ensures padding doesn't affect width */
-  margin-top: 250px;
-
 }
 
+/* Heading styles */
 .contact-container h2 {
   color: #f4a261; /* Warm accent color for the heading */
   font-size: 1.8rem; /* Scalable font size */
 }
 
+/* Paragraph styles */
 .contact-container p {
   font-size: 1.1rem;
   margin-bottom: 15px;
 }
 
+/* Link styles */
 .contact-container a {
   color: #e63946; /* Accent color for links */
   text-decoration: none;
@@ -35,14 +35,16 @@
   text-decoration: underline;
 }
 
+/* Strong tag for labels */
 .contact-container strong {
   color: #f4a261; /* Accent color for labels */
 }
 
+/* Media Query for tablets */
 @media (max-width: 768px) {
   .contact-container {
     max-width: 90%; /* More flexible on smaller screens */
-    margin-top: 30px; /* Adjusted top margin */
+    margin-top: 120px; /* Adjusted top margin */
     padding: 15px; /* Reduced padding for smaller screens */
   }
 
@@ -55,10 +57,11 @@
   }
 }
 
+/* Media Query for very small screens */
 @media (max-width: 480px) {
   .contact-container {
     max-width: 95%; /* Further flexibility on very small screens */
-    margin-top: 100px; /* Smaller margin-top for very small screens */
+    margin-top: 10px; /* Smaller margin-top for very small screens */
     padding: 10px; /* Reduced padding */
   }
 
@@ -73,4 +76,17 @@
   .contact-container a {
     font-size: 0.9rem; /* Slightly smaller link text */
   }
+}
+
+/* Ensure footer stays at the bottom */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer container should always be at the bottom */
+footer {
+  margin-top: auto; /* Pushes the footer to the bottom */
 }

@@ -1,11 +1,11 @@
-/* Main Experience Section */
+/* === 🔹 Main Experience Section 🔹 === */
 .experience-main-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap; /* Improves responsiveness */
   padding: 40px 80px;
-  background-color: #222; /* Black background */
+  background-color: #222; /* Dark background */
   color: #fff; /* White text */
   min-height: 100vh; /* Adjusted from 200vh to ensure better responsiveness */
   gap: 40px; /* Adds spacing between elements */
@@ -13,7 +13,7 @@
   margin-top: 50px;
 }
 
-/* Right Section - Content */
+/* === 🔹 Right Section - Content === */
 .experience-content {
   flex: 2;
   max-width: 800px;
@@ -22,7 +22,7 @@
   display: block; /* Ensures visibility */
 }
 
-/* Title Styling */
+/* === 🔹 Title Styling === */
 .experience-title {
   font-size: 2rem;
   font-weight: bold;
@@ -37,7 +37,7 @@
   color: #f4a261;
 }
 
-/* Experience Card Styles */
+/* === 🔹 Experience Card Styling === */
 .experience-card {
   background: #222; /* Dark gray background for cards */
   padding: 20px;
@@ -50,7 +50,7 @@
   transform: translateY(-5px);
 }
 
-/* Card Title */
+/* === 🔹 Card Title === */
 .experience-card h2 {
   font-size: 22px;
   color: #f4a261;
@@ -63,7 +63,7 @@
   color: #f4a261;
 }
 
-/* Company Name */
+/* === 🔹 Company Name === */
 .experience-company {
   font-size: 18px;
   font-weight: bold;
@@ -77,7 +77,7 @@
   color: #e9c46a;
 }
 
-/* Duration */
+/* === 🔹 Duration === */
 .experience-duration {
   font-size: 16px;
   color: #f4f4f4;
@@ -91,7 +91,7 @@
   color: #f4a261;
 }
 
-/* Experience List Styles */
+/* === 🔹 Experience List Styles === */
 .experience-list {
   list-style: none;
   padding: 0;
@@ -110,13 +110,11 @@
   color: #f4a261;
 }
 
-/* Slick Carousel Customization */
+/* === 🔹 Slick Carousel Customization === */
 .slick-prev,
 .slick-next {
   color: #222;
 }
-
-
 
 .slick-slide {
   transition: transform 0.3s ease-in-out;
@@ -126,24 +124,28 @@
   transform: scale(1.02);
 }
 
-/* 🔥 Responsive Design */
+/* === 🔥 Responsive Design === */
 @media (max-width: 992px) {
+  /* === Main Experience Container === */
   .experience-main-container {
     flex-direction: column;
     text-align: center;
     padding: 40px 20px;
   }
 
+  /* === Experience Content === */
   .experience-content {
     width: 100%;
   }
 
+  /* === Title Styling === */
   .experience-title {
     font-size: 1.8rem;
     margin-bottom: 20px; /* Ensures spacing */
-    display: block; /* Ensures it's visible */
+    display: block;
   }
 
+  /* === Experience Card Adjustments === */
   .experience-image img {
     max-width: 350px;
   }
@@ -152,7 +154,7 @@
     padding: 15px;
   }
 
-  /* Adjusting Icon Sizes */
+  /* === Icon Size Adjustments === */
   .experience-card h2 i,
   .experience-company i,
   .experience-duration i {
@@ -166,17 +168,20 @@
 
 /* Mobile Devices (Additional Responsiveness) */
 @media (max-width: 768px) {
+  /* === Main Experience Container === */
   .experience-main-container {
     padding: 20px;
     gap: 20px;
   }
 
+  /* === Experience Title === */
   .experience-title {
     font-size: 1.6rem;
     margin-bottom: 15px;
     display: block;
   }
 
+  /* === Experience Card Adjustments === */
   .experience-card {
     padding: 12px;
   }
@@ -198,17 +203,21 @@
   }
 }
 
+/* Mobile-First Styles (for smaller screens) */
 @media (max-width: 480px) {
+  /* === Main Experience Container === */
   .experience-main-container {
     padding: 15px;
   }
 
+  /* === Experience Title === */
   .experience-title {
     font-size: 1.4rem;
     margin-bottom: 10px;
     display: block;
   }
 
+  /* === Experience Card Adjustments === */
   .experience-card {
     padding: 10px;
   }

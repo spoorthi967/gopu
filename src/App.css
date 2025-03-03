@@ -35,6 +35,10 @@ body {
   display: flex;
 }
 
+.bi{
+  color:#f4a261;
+}
+
 .nav-menu ul {
   list-style: none;
   padding: 0;
@@ -54,7 +58,7 @@ body {
 }
 
 .nav-menu ul li a:hover {
-  color: #ffcc00;
+  color: #f4a261;
 }
 
 /* Mobile Menu */
@@ -129,7 +133,7 @@ body {
 }
 
 .footer .social-links a:hover {
-  color: #ffcc00;
+  color: #f4a261;
 }
 
 /* Responsive Design */

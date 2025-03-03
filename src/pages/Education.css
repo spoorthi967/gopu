@@ -77,17 +77,13 @@
 
 /* === 🔹 Fix Slick Arrows Styling 🔹 === */
 .slick-prev, .slick-next {
-  background-color: transparent;
-  border: none;
-  width: 50px;
-  height: 50px;
+
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
 }
@@ -100,29 +96,33 @@
   opacity: 1;
 }
 
-/* === 🔹 Slick Arrow Icons 🔹 === */
+/* === 🔹 Custom Slick Arrow Icons === */
 .slick-prev::before, .slick-next::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  color: white;
-  background: #ff914d; /* Highlighted background */
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
   padding: 10px;
-  border-radius: 50%;
-  font-size: 1.5rem;
+  border-radius: 90px
+
 }
 
-/* Fix FontAwesome Icons */
 .slick-prev::before {
-  content: "\f104"; /* Left Arrow */
+  border-width: 0px 0px 0px 8px; /* Left Arrow */
+  margin-left: 5px; /* Adjust position */
 }
+
 .slick-next::before {
-  content: "\f105"; /* Right Arrow */
+  border-width: 0px 0 0px 8px; /* Right Arrow */
+ 
 }
 
 /* === 🔹 Positioning Fix for Arrows 🔹 === */
 .slick-prev {
   left: -40px;
 }
+
 .slick-next {
   right: -40px;
 }
