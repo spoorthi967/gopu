@@ -102,7 +102,7 @@
   }
 
   .image-section img {
-    width: 100%;
+    width: 60%;
     max-width: 100%; /* Adjusts dynamically */
     height: auto; /* Ensures correct scaling */
     object-fit: contain; /* Preserves aspect ratio */
