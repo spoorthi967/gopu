@@ -83,7 +83,7 @@
 /* Mobile View */
 @media screen and (max-width: 768px) {
   .home-container {
-    height: auto;
+    height:800PX;
     padding: 10px;
   }
 
