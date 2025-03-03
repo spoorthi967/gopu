@@ -8,7 +8,6 @@
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   gap: 30px; /* Adds spacing between image and content */
-
 }
 
 /* Left - Image Section */
@@ -37,6 +36,7 @@
   color: white;
 }
 
+/* Skills Category Section */
 .skills-category {
   background-color: #222;
   background-color: rgba(255, 255, 255, 0.1);
@@ -80,7 +80,7 @@
 @media (max-width: 900px) {
   .skills-main-container {
     flex-direction: column;
-    padding: 100px 20px;
+    padding: 100px 20px; /* Adjust padding for small screens */
   }
 
   .skills-content {
@@ -89,5 +89,30 @@
 
   .skills-image img {
     max-width: 300px; /* Reduce image size on small screens */
+  }
+}
+
+/* Additional Media Query for Mobile Devices */
+@media (max-width: 600px) {
+  .skills-main-container {
+    padding: 50px 15px; /* Further reduce padding on very small screens */
+    gap: 20px; /* Decrease the gap between image and content */
+  }
+
+  .skills-content h2 {
+    font-size: 1.5rem; /* Adjust heading size for smaller screens */
+  }
+
+  .skills-category {
+    padding: 15px; /* Reduce padding inside categories */
+  }
+
+  .skill-item {
+    font-size: 0.9rem; /* Slightly reduce font size for mobile */
+    padding: 8px; /* Reduce padding to save space */
+  }
+
+  .skill-item svg {
+    font-size: 1.2rem; /* Slightly reduce icon size on mobile */
   }
 }

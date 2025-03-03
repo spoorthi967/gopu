@@ -4,15 +4,13 @@
   align-items: center;
   justify-content: center;
   background-color: #222;
-  padding: 150px;
+  padding: 150px 20px;
   color: #ffffff; /* White text */
   flex-wrap: wrap;
   text-align: left;
   gap: 40px;
   font-family: 'Times New Roman', Times, serif;
 }
-
-
 
 /* Education Content */
 .education-content {
@@ -21,13 +19,12 @@
   max-width: 600px;
 }
 
-.education-content h1{
-  color:white;
+.education-content h1 {
+  color: white;
 }
 
-
-.bi{
-  color:#ff914d;
+.bi {
+  color: #ff914d;
 }
 
 /* Title Styling */
@@ -64,11 +61,13 @@
 /* Icon Styling */
 .education-card i {
   margin-right: 10px;
-  color:  #ff914d;
+  color: #ff914d;
   font-size: 1.2rem;
 }
 
 /* Responsive Design */
+
+/* Tablet and Below */
 @media (max-width: 992px) {
   .education-main-container {
     flex-direction: column;
@@ -81,7 +80,8 @@
   }
 
   .education-image img {
-    width: 300px;
+    width: 100%;
+    height: auto;
   }
 
   .education-title {
@@ -90,5 +90,56 @@
 
   .education-card {
     padding: 15px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .education-main-container {
+    padding: 50px 20px;
+    gap: 20px;
+  }
+
+  .education-title {
+    font-size: 1.6rem;
+  }
+
+  .education-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .education-card {
+    padding: 12px;
+  }
+
+  .education-institute, .education-duration, .education-gpa {
+    font-size: 1rem;
+  }
+
+  .education-card i {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile First Optimization */
+@media (max-width: 480px) {
+  .education-main-container {
+    padding: 30px 10px;
+  }
+
+  .education-title {
+    font-size: 1.5rem;
+  }
+
+  .education-card {
+    padding: 10px;
+  }
+
+  .education-institute, .education-duration, .education-gpa {
+    font-size: 0.9rem;
+  }
+
+  .education-card i {
+    font-size: 1rem;
   }
 }

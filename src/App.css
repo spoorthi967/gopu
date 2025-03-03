@@ -87,6 +87,29 @@ body {
   }
 }
 
+/* New Layout for Image and Text */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-content .image {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.main-content .content {
+  color: #fff;
+  font-size: 16px;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
 /* Footer */
 .footer {
   background: #222;
@@ -107,4 +130,20 @@ body {
 
 .footer .social-links a:hover {
   color: #ffcc00;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .main-content {
+    padding: 10px;
+  }
+
+  .main-content .image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .main-content .content {
+    font-size: 14px;
+  }
 }
