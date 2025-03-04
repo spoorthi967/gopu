@@ -194,11 +194,12 @@ footer {
 @media (max-width: 480px) {
   .about-container {
     padding: 20px;
-    gap: 15px;
+  
   }
 
   .about-photo img {
     width: 150px;
+    margin-bottom: 50px;
   }
 
   .about-text h1 {
@@ -222,8 +223,4 @@ footer {
     padding: 8px 16px;
   }
 
-  /* Ensures Footer is Pushed Down */
-  footer {
-    margin-top: 100px;
-  }
 }
