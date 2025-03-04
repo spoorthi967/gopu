@@ -2,16 +2,15 @@
 .about-container {
   display: flex;
   flex-direction: row; /* Ensures stacking on smaller screens */
-  justify-content: end;
-  gap: 20px;
+  justify-content:right;
   padding: 50px 20px;
   background-color: #222;
   color: #fff;
-
   font-size: large;
   margin-top: 150px;
-  text-align: center; /* Centers content for better mobile readability */
+  text-align:left;
   font-family: 'Times New Roman', Times, serif;
+  margin-left: 80px;
 }
 
 /* About Title */
@@ -19,7 +18,7 @@
   color: #f4a261;
   font-size: 2rem;
   margin-bottom: 10px;
-  text-align: center;
+  text-align:left;
 }
 
 /* About Photo */
@@ -27,6 +26,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+ 
 }
 
 .about-photo img {
@@ -79,6 +79,7 @@
   font-size: 16px;
   border: none;
   cursor: pointer;
+  text-align:left;
   margin-top: 20px;
   border-radius: 5px;
   transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
@@ -160,6 +161,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 180px;
+    margin-bottom: 80px;
 
 
   }

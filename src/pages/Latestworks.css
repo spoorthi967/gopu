@@ -162,6 +162,7 @@
     display: block !important; /* Ensures it's not hidden */
     visibility: visible !important;
     opacity: 1 !important;
+    margin-bottom: 50px;
   }
 
   /* Adjust Arrow Sizes */
