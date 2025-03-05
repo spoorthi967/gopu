@@ -2,7 +2,8 @@
 .about-container {
   display: flex;
   flex-direction: row; /* Ensures stacking on smaller screens */
-  justify-content:right;
+  justify-content:center;
+  align-items: center;
   padding: 50px 20px;
   background-color: #222;
   color: #fff;

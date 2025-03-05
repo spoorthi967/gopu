@@ -3,7 +3,7 @@
   padding: 50px 20px;
   background-color: #222; /* Dark background */
   color: white; /* Text color */
-  text-align: center;
+  text-align:center;
   min-height: 100vh; /* Ensures proper height */
   display: flex;
   flex-direction: column;
@@ -18,11 +18,13 @@
   color: #f4a261;
   font-size: 2.5rem;
   margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .latest-works-container h2 {
   color: white;
   font-size: 1.8rem;
+  text-align: center;
   margin-top: 20px;
 }
 
@@ -32,16 +34,21 @@
   margin-bottom: 10px;
 }
 
+
+
 /* 🔹 List Styling */
 .latest-works-container ul {
-  list-style-type: none;
+  list-style-type:none;
   padding-left: 0;
   font-size: 1rem;
 }
 
-.latest-works-container ul li {
+.latest-works-container ul li  svg {
   margin-bottom: 10px;
+  color:#f4a261;
 }
+
+
 
 /* Remove "Previous" & "Next" Text (Only show arrows) */
 .slick-prev::before,
@@ -170,6 +177,8 @@
   .slick-next {
     font-size: 20px !important;
   }
+
+ 
 
   .slick-prev {
     left: -20px;

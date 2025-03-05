@@ -6,6 +6,8 @@ import "./Skills.css"; // Import styles
 
 
 import { FaReact, FaNodeJs, FaDatabase, FaGithub, FaTools, FaCode, FaBug, FaServer } from "react-icons/fa";
+import { SiMongodb, SiGraphql, SiFirebase, SiPostgresql, SiMysql, SiRedis, SiSocketdotio } from "react-icons/si";
+import { FaAws } from "react-icons/fa6";
 
 
 
@@ -13,18 +15,6 @@ import { FaReact, FaNodeJs, FaDatabase, FaGithub, FaTools, FaCode, FaBug, FaServ
 
 const skillsData = [
 
-  
-  {
-    category: "Front-End Technologies",
-    skills: [
-      { name: "React.js", icon: <FaReact /> },
-      { name: "Redux", icon: <FaReact /> },
-      { name: "JavaScript", icon: <FaCode /> },
-      { name: "HTML", icon: <FaCode /> },
-      { name: "CSS", icon: <FaCode /> },
-      { name: "API Integration", icon: <FaServer /> },
-    ],
-  },
   {
     category: "Web Development",
     skills: [
@@ -34,11 +24,41 @@ const skillsData = [
       { name: "Node.js", icon: <FaNodeJs /> },
     ],
   },
+  
+  {
+    category: "Front-End Technologies",
+    skills: [
+      { name: "React.js", icon: <FaReact /> },
+      { name: "Redux", icon: <FaReact /> },
+      { name: "JavaScript", icon: <FaCode /> },
+      {name: "Bootsrap" , icon: <FaCode/>},
+      {name: "Tailwind" , icon: <FaCode/>},
+      {name: "material ui" , icon: <FaCode/>},
+      {name: "React hooks" , icon: <FaReact/>},
+      {name: "typescript" , icon: <FaCode/>},
+      { name: "HTML", icon: <FaCode /> },
+      { name: "CSS", icon: <FaCode /> },
+      { name: "API Integration", icon: <FaServer /> },
+    ],
+  },
+
+  {
+    category: "Back-End Technologies",
+    skills: [
+      { name: "Node.js", icon: <FaNodeJs /> },
+      { name: "Express.js", icon: <FaServer /> },
+      { name: "MongoDB", icon: <SiMongodb /> },
+      { name: "REST API", icon: <FaServer /> },
+      { name: "PostgreSQL", icon: <SiPostgresql /> },
+      { name: "MySQL", icon: <SiMysql /> },
+      { name: "AWS (Hosting & Services)", icon: <FaAws /> },
+    ],
+  },
+  
   {
     category: "Build Tools & Version Control",
     skills: [
-      { name: "Webpack", icon: <FaTools /> },
-      { name: "Babel", icon: <FaTools /> },
+
       { name: "Git", icon: <FaGithub /> },
       { name: "GitHub", icon: <FaGithub /> },
     ],
@@ -58,7 +78,6 @@ const skillsData = [
     skills: [
       { name: "Jira", icon: <FaTools /> },
       { name: "Linux OS", icon: <FaTools /> },
-      { name: "ServiceNow", icon: <FaTools /> },
       { name: "IT Systems", icon: <FaTools /> },
       { name: "AV Equipment", icon: <FaTools /> },
       { name: "Video Conferencing", icon: <FaTools /> },
