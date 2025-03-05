@@ -209,6 +209,7 @@
   /* === Main Experience Container === */
   .experience-main-container {
     padding: 15px;
+   
   }
 
   /* === Experience Title === */
@@ -221,6 +222,7 @@
   /* === Experience Card Adjustments === */
   .experience-card {
     padding: 10px;
+   
   }
 
   .experience-card h2 {
