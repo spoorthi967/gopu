@@ -65,6 +65,7 @@ body {
 @media screen and (max-width: 768px) {
   .menu-toggle {
     display: block;
+  
   }
 
   .nav-menu {
@@ -140,6 +141,7 @@ body {
 @media screen and (max-width: 768px) {
   .main-content {
     padding: 10px;
+
   }
 
   .main-content .image {

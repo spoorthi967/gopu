@@ -91,6 +91,7 @@
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
+    font-size: 0.5px;
   }
 
   /* Ensure image appears properly */
@@ -102,7 +103,7 @@
   }
 
   .image-section img {
-    width: 60%;
+    width: 70%;
     max-width: 100%; /* Adjusts dynamically */
     height: auto; /* Ensures correct scaling */
     object-fit: contain; /* Preserves aspect ratio */
@@ -115,7 +116,7 @@
   }
 
   .text-section h1 {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
   }
 
   .description {
@@ -123,9 +124,10 @@
   }
 
   .btn {
-    width: 80%;
+    width: 40%;
     text-align: center;
     display: block;
+    font-size: x-small;
     margin: 1rem auto;
     margin-bottom: 60px;
   }

@@ -162,14 +162,14 @@
   }
 
   .btn1 {
-    font-size: 0.9rem;
-    width: 90%; /* Ensures button is properly visible */
+    font-size: 0.5rem;
+    width: 100%; /* Ensures button is properly visible */
     text-align: center;
     margin: 20px auto; /* Centers and adds spacing */
     display: block !important; /* Ensures it's not hidden */
     visibility: visible !important;
     opacity: 1 !important;
-    margin-bottom: 50px;
+    
   }
 
   /* Adjust Arrow Sizes */
