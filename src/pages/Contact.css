@@ -23,6 +23,7 @@ html, body {
   align-items: center;
   justify-content: center;
   padding: 20px;
+
 }
 
 /* Contact Container */
@@ -35,7 +36,7 @@ html, body {
   background: #000000;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(46, 44, 44, 0.1);
-  margin-top: 150px; /* Adjusted for better visibility */
+  margin-top: 250px; /* Adjusted for better visibility */
   color: white;
 }
 
@@ -138,7 +139,7 @@ footer {
 @media (max-width: 480px) {
   .contact-container {
     max-width: 95%;
-    margin-top: 240px;
+    margin-top: 300px;
     padding: 10px;
   }
 
