@@ -33,11 +33,16 @@ html, body {
   margin: 0 auto;
   text-align: center;
   padding: 20px;
-  background: #000000;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(46, 44, 44, 0.1);
   margin-top: 250px; /* Adjusted for better visibility */
   color: white;
+}
+
+.contact-container:hover{
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 10px rgba(255, 145, 77, 0.3);
 }
 
 /* Heading styles */
@@ -50,13 +55,23 @@ html, body {
 .contact-container p {
   font-size: 1.1rem;
   margin-bottom: 15px;
+
+  
 }
+
 
 /* Link styles */
 .contact-container a {
   color: #f4a261;
   text-decoration: none;
   font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  text-align:center;
+  justify-content: center;
+  padding: 10px;
+  background: #111111;
+  border-radius: 8px;
 }
 
 .contact-container a:hover {
@@ -71,8 +86,8 @@ html, body {
 /* Button Styling */
 .btn {
   display: inline-block;
+
   background-color: #f4a261;
-  color: black;
   padding: 12px 20px;
   border-radius: 5px;
   font-weight: bold;
@@ -91,7 +106,7 @@ html, body {
   height: auto;
   display: block;
   margin: 10px auto;
-  border-radius: 8px; /* Optional: Adds a rounded corner effect */
+  border-radius: 8px; 
 }
 
 /* Ensuring "Latest Works" Button is Visible */

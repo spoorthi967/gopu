@@ -126,6 +126,7 @@
 
   .latest-works-container ul li {
     font-size: 0.9rem;
+  
   }
 
   .btn1 {
@@ -159,6 +160,7 @@
 
   .latest-works-container ul li {
     font-size: 0.85rem;
+    text-align: left;
   }
 
   .btn1 {

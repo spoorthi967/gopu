@@ -103,7 +103,7 @@
   }
 
   .image-section img {
-    width: 70%;
+    width: 60%;
     max-width: 100%; /* Adjusts dynamically */
     height: auto; /* Ensures correct scaling */
     object-fit: contain; /* Preserves aspect ratio */
@@ -129,6 +129,6 @@
     display: block;
     font-size: x-small;
     margin: 1rem auto;
-    margin-bottom: 60px;
+   
   }
 }

@@ -39,15 +39,17 @@
 
 /* === 🔹 Experience Card Styling === */
 .experience-card {
-  background: #222; /* Dark gray background for cards */
+  background: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease-in-out;
 }
 
+
 .experience-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0px 4px 10px rgba(255, 145, 77, 0.3);
 }
 
 /* === 🔹 Card Title === */

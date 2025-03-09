@@ -35,6 +35,12 @@
   display: block; /* Ensures visibility */
 }
 
+
+.skills-category:hover{
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 10px rgba(255, 145, 77, 0.3);
+}
+
 /* ✅ Fix: Ensuring Heading is Always Visible */
 .skills-content h2 {
   font-size: 2rem;
