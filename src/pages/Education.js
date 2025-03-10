@@ -5,6 +5,25 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Education.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Importing arrow icons
+
+// Custom Previous Arrow (Left Side)
+const CustomPrevArrow = ({ onClick }) => {
+  return (
+    <div className="custom-arrow custom-prev" onClick={onClick}>
+      <FaArrowLeft />
+    </div>
+  );
+};
+
+// Custom Next Arrow (Right Side)
+const CustomNextArrow = ({ onClick }) => {
+  return (
+    <div className="custom-arrow custom-next" onClick={onClick}>
+      <FaArrowRight />
+    </div>
+  );
+};
 
 const Education = () => {
   const settings = {
@@ -15,7 +34,9 @@ const Education = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: true, // Default slick arrows will be used
+    arrows: true,
+    prevArrow: <CustomPrevArrow />, // Left arrow
+    nextArrow: <CustomNextArrow />, // Right arrow
   };
 
   return (
@@ -46,9 +67,6 @@ const Education = () => {
             </p>
             <p className="education-duration">
               <i className="bi bi-calendar"></i> August 2016 – May 2020
-            </p>
-            <p className="education-gpa">
-              <i className="bi bi-bar-chart"></i> CGPA: 6.8/10
             </p>
           </div>
         </Slider>

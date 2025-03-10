@@ -6,9 +6,28 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Latestworks.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { FaArrowLeft } from "react-icons/fa"; // Importing back arrow icon
 import { FaReact, FaDesktop, FaCode, FaServer, FaChartBar, FaMobileAlt } from 'react-icons/fa'; 
 import { SiRedux, SiAxios, SiMongodb } from 'react-icons/si';
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Importing arrow icons
+
+// Custom Previous Arrow (Left Side)
+const CustomPrevArrow = ({ onClick }) => {
+  return (
+    <div className="custom-arrow custom-prev" onClick={onClick}>
+      <FaArrowLeft />
+    </div>
+  );
+};
+
+// Custom Next Arrow (Right Side)
+const CustomNextArrow = ({ onClick }) => {
+  return (
+    <div className="custom-arrow custom-next" onClick={onClick}>
+      <FaArrowRight />
+    </div>
+  );
+};
+
 
 const Latestworks = () => {
   const settings = {
@@ -19,14 +38,25 @@ const Latestworks = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    prevArrow: <CustomPrevArrow />, // Left arrow
+    nextArrow: <CustomNextArrow />, // Right arrow
   };
 
   return (
+
+
     <div className="container latest-works-container">
-      <h1 className="text-center">Latest Works</h1>
+    
+    <div className="back-button1">
+              <Link to="/" className="btn1 ">  
+
+                <FaArrowLeft className="me-2" />
+              </Link>
+            </div>
+     
       <Slider {...settings}>
      
-
+     
 {/* Project 1 */}
 <div className="project-slide">
   <h2>Capstone Project - Market Data Dashboard</h2>
@@ -61,13 +91,10 @@ const Latestworks = () => {
   </ul>
 </div>
 
-     
       </Slider>
-      <div className="back-button1">
-              <Link to="/" className="btn1 btn-primary">
-                <FaArrowLeft className="me-2" /> Back to Home
-              </Link>
-            </div>
+
+    
+      
     </div>
   );
 };

@@ -5,6 +5,26 @@ import "slick-carousel/slick/slick-theme.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./Experience.css";
 import experience from "../Images/experience.jpg";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Importing arrow icons
+
+// Custom Previous Arrow (Left Side)
+const CustomPrevArrow = ({ onClick }) => {
+  return (
+    <div className="custom-arrow custom-prev" onClick={onClick}>
+      <FaArrowLeft />
+    </div>
+  );
+};
+
+// Custom Next Arrow (Right Side)
+const CustomNextArrow = ({ onClick }) => {
+  return (
+    <div className="custom-arrow custom-next" onClick={onClick}>
+      <FaArrowRight />
+    </div>
+  );
+};
+
 
 const Experience = () => {
   const settings = {
@@ -15,7 +35,9 @@ const Experience = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: true
+    arrows: true ,
+    prevArrow: <CustomPrevArrow />, // Left arrow
+    nextArrow: <CustomNextArrow />, // Right arrow
   };
 
   return (

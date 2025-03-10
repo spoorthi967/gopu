@@ -5,6 +5,27 @@ import { FaCode, FaDatabase, FaCloud, FaTools } from "react-icons/fa";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "./Moreabout.css";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Importing arrow icons
+
+// Custom Previous Arrow (Left Side)
+const CustomPrevArrow = ({ onClick }) => {
+  return (
+    <div className="custom-arrow custom-prev" onClick={onClick}>
+      <FaArrowLeft />
+    </div>
+  );
+};
+
+// Custom Next Arrow (Right Side)
+const CustomNextArrow = ({ onClick }) => {
+  return (
+    <div className="custom-arrow custom-next" onClick={onClick}>
+      <FaArrowRight />
+    </div>
+  );
+};
+
+
 
 const Moreabout = () => {
   const settings = {
@@ -15,6 +36,8 @@ const Moreabout = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    prevArrow: <CustomPrevArrow />, // Left arrow
+    nextArrow: <CustomNextArrow />, // Right arrow
   };
 
   return (

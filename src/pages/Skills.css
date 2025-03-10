@@ -123,22 +123,22 @@
 
   /* Make sure the title is visible and properly sized */
   .skills-content h2 {
-    font-size: 1.6rem; /* Adjust font size for mobile */
+    font-size: 1.4rem; /* Adjust font size for mobile */
     margin-bottom: 15px;
     display: block; /* Ensure the heading is visible */
   }
 
   .skills-category {
-    padding: 15px; /* Reduce padding */
+    padding: 12px; /* Reduce padding */
   }
 
   .skill-item {
-    font-size: 0.9rem; /* Reduce font size for mobile */
+    font-size: 0.6rem; /* Reduce font size for mobile */
     padding: 8px;
   }
 
   .skill-item svg {
-    font-size: 1.2rem; /* Reduce icon size */
+    font-size: 1.0rem; /* Reduce icon size */
   }
 }
 

@@ -216,7 +216,7 @@
 
   /* === Experience Title === */
   .experience-title {
-    font-size: 1.4rem;
+    font-size: 1.0 rem;
     margin-bottom: 10px;
     display: block;
   }
@@ -228,15 +228,15 @@
   }
 
   .experience-card h2 {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .experience-company,
   .experience-duration {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .experience-list li {
-    font-size: 12px;
+    font-size: 8px;
   }
 }

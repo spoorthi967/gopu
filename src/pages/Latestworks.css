@@ -1,192 +1,136 @@
-/* 🔥 Latest Works Component Styling */
+/* General Container */
 .latest-works-container {
-  padding: 50px 20px;
-  background-color: #222; /* Dark background */
-  color: white; /* Text color */
-  text-align:center;
-  min-height: 100vh; /* Ensures proper height */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: auto; /* Prevents hidden elements */
-  padding-bottom: 80px; /* Ensures space for the button */
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 100px;
+  background-color: #222;;
 }
 
-/* 🔹 Heading Styles */
-.latest-works-container h1 {
-  color: #f4a261;
-  font-size: 2.5rem;
+/* Heading */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
   margin-bottom: 20px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
-.latest-works-container h2 {
+/* Project Slide Box */
+.project-slide {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-slide:hover {
+  transform: translateY(-5px);
+}
+
+.project-slide h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.project-slide h3 {
+  font-size: 1.1rem;
+  color: #ff914d;
+  margin-bottom: 15px;
+}
+
+/* Project Details */
+.project-slide ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-slide ul li {
+  font-size: 1rem;
   color: white;
-  font-size: 1.8rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-slide ul li svg {
+  margin-right: 8px;
+  color: #ff914d;
+  font-size: 1.6rem;
+}
+
+/* Back Button */
+.back-button1 {
+
   text-align: center;
   margin-top: 20px;
-}
 
-.latest-works-container h3 {
-  color: #f4a261;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-
-
-/* 🔹 List Styling */
-.latest-works-container ul {
-  list-style-type:none;
-  padding-left: 0;
-  font-size: 1rem;
-}
-
-.latest-works-container ul li  svg {
-  margin-bottom: 10px;
-  color:#f4a261;
-}
-
-
-
-/* Remove "Previous" & "Next" Text (Only show arrows) */
-.slick-prev::before,
-.slick-next::before {
-  content: '' !important; /* Remove previous/next text */
-  font-size: 24px; /* Adjust size */
-  color: white; /* Arrow color */
-  display: block; /* Ensure the arrows are shown */
-}
-
-.slick-next::before {
-  content: '' !important; /* Right arrow */
-}
-
-/* Position the arrows properly */
-.slick-prev {
-  left: -50px; /* Adjust position */
-}
-
-.slick-next {
-  right: -50px;
-}
-
-/* Arrow Hover Effect */
-.slick-prev:hover::before, 
-.slick-next:hover::before {
-  color: #f4a261; /* Change color on hover */
-}
-
-/* 🔹 Dots Customization */
-.slick-dots li button:before {
-  color: #f4a261;
-}
-
-/* 🔥 Back Button */
-.back-button1 {
-  text-align: center;
-  margin-top: 30px;
 }
 
 .btn1 {
-  background-color: #f4a261;
-  border: none;
-  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
   color: white;
-  text-decoration: none;
+  padding: 10px 20px;
   border-radius: 5px;
-  cursor: pointer;
+  text-decoration: none;
   font-size: 1rem;
-  display: block; /* Ensure it is always visible */
-  width: fit-content;
-  margin: 30px auto; /* Centers button */
+  transition: background 0.3s ease-in-out;
 }
 
 .btn1:hover {
-  background-color: #e76f51;
+  background-color: #a09c99;
 }
 
-/* 📱 Responsive Design */
-
-/* 🔹 Tablet Screens */
-@media (max-width: 900px) {
-  .latest-works-container h1 {
-    font-size: 2rem;
-    
-  }
-
-  .latest-works-container h2 {
-    font-size: 1.5rem;
-  }
-
-  .latest-works-container h3 {
-    font-size: 1rem;
-  }
-
-  .latest-works-container ul li {
-    font-size: 0.9rem;
-  
-  }
-
-  .btn1 {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
-
-  /* Adjust Arrow Positions */
-  .slick-prev {
-    left: -30px;
-  }
-
-  .slick-next {
-    right: -30px;
-  }
+.btn1 svg {
+  margin-right: 5px;
 }
 
-/* 🔹 Mobile Screens */
-@media (max-width: 600px) {
-  .latest-works-container h1 {
-    font-size: 1.8rem;
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .latest-works-container {
+    padding: 10px;
   }
 
-  .latest-works-container h2 {
+  .project-slide {
+    padding: 15px;
+    margin: 10px 5px;
+  }
+
+  .project-slide h2 {
     font-size: 1.3rem;
   }
 
-  .latest-works-container h3 {
+  .project-slide h3 {
     font-size: 1rem;
   }
 
-  .latest-works-container ul li {
-    font-size: 0.85rem;
-    text-align: left;
+  .project-slide ul li {
+    font-size: 0.9rem;
   }
 
+  /* Hide "Back to Home" text and show only the arrow */
   .btn1 {
-    font-size: 0.5rem;
-    width: 100%; /* Ensures button is properly visible */
+   
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 20px auto; /* Centers and adds spacing */
-    display: block !important; /* Ensures it's not hidden */
-    visibility: visible !important;
-    opacity: 1 !important;
-    
+    border-radius: 20%; /* Make it a circular button */
   }
 
-  /* Adjust Arrow Sizes */
-  .slick-prev, 
-  .slick-next {
-    font-size: 20px !important;
+  .btn1 span {
+    display: none; /* Hide the text */
   }
 
- 
-
-  .slick-prev {
-    left: -20px;
-  }
-
-  .slick-next {
-    right: -20px;
+  .me-2 svg {
+    display: flex;
+    margin: 0; /* Center the arrow */
+    font-size: 1.5rem; /* Adjust arrow size */
   }
 }
