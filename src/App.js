@@ -12,9 +12,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
 import logo3 from './Images/logo4.png';
+import clickSound from './Images/click1.wav'; // 🔊 Import click sound
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // 🔊 Play click sound function
+  const playClickSound = () => {
+    const audio = new Audio(clickSound);
+    audio.volume = 0.5; // optional: adjust volume
+    audio.currentTime = 0;
+    audio.play();
+  };
 
   return (
     <Router basename="/gopu">
@@ -22,20 +31,51 @@ const App = () => {
         <div className="logo">
           <img src={logo3} alt="Logo" />
         </div>
-        <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+        <div
+          className="menu-toggle"
+          onClick={() => {
+            setMenuOpen(!menuOpen);
+            playClickSound();
+          }}
+        >
           <i className={menuOpen ? "bi bi-x-lg" : "bi bi-list"}></i>
         </div>
         <nav className={`nav-menu ${menuOpen ? "show" : ""}`}>
           <ul>
-            <li><Link to="/" onClick={() => setMenuOpen(false)}><i className="bi bi-house-door"></i> HOME</Link></li>
-            <li><Link to="/about" onClick={() => setMenuOpen(false)}><i className="bi bi-person"></i> ABOUT ME</Link></li>
-            <li><Link to="/education" onClick={() => setMenuOpen(false)}><i className="bi bi-mortarboard-fill"></i> EDUCATION</Link></li>
-            <li><Link to="/experience" onClick={() => setMenuOpen(false)}><i className="bi bi-briefcase"></i> EXPERIENCE</Link></li>
-            <li><Link to="/skills" onClick={() => setMenuOpen(false)}><i className="bi bi-lightbulb"></i> SKILLS</Link></li>
-            <li><Link to="/contact" onClick={() => setMenuOpen(false)}><i className="bi bi-envelope"></i> CONTACT</Link></li>
+            <li>
+              <Link to="/" onClick={() => { setMenuOpen(false); playClickSound(); }}>
+                <i className="bi bi-house-door"></i> HOME
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" onClick={() => { setMenuOpen(false); playClickSound(); }}>
+                <i className="bi bi-person"></i> ABOUT ME
+              </Link>
+            </li>
+            <li>
+              <Link to="/education" onClick={() => { setMenuOpen(false); playClickSound(); }}>
+                <i className="bi bi-mortarboard-fill"></i> EDUCATION
+              </Link>
+            </li>
+            <li>
+              <Link to="/experience" onClick={() => { setMenuOpen(false); playClickSound(); }}>
+                <i className="bi bi-briefcase"></i> EXPERIENCE
+              </Link>
+            </li>
+            <li>
+              <Link to="/skills" onClick={() => { setMenuOpen(false); playClickSound(); }}>
+                <i className="bi bi-lightbulb"></i> SKILLS
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" onClick={() => { setMenuOpen(false); playClickSound(); }}>
+                <i className="bi bi-envelope"></i> CONTACT
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<Aboutme />} />
@@ -46,17 +86,31 @@ const App = () => {
         <Route path="/moreabout" element={<Moreabout />} />
         <Route path="/latestworks" element={<Latestworks />} />
       </Routes>
+
       <footer className="footer">
         <div className="footer-content">
           <p>© 2025 Gopu Spoorthi. All Rights Reserved.</p>
           <div className="social-links">
-            <a href="https://www.linkedin.com/in/gopu-spoorthi-79185a200/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/gopu-spoorthi-79185a200/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={playClickSound}
+            >
               <i className="bi bi-linkedin"></i>
             </a>
-            <a href="https://github.com/spoorthi967" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/spoorthi967"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={playClickSound}
+            >
               <i className="bi bi-github"></i>
             </a>
-            <a href="mailto:gopuspoorthi18@gmail.com">
+            <a
+              href="mailto:gopuspoorthi18@gmail.com"
+              onClick={playClickSound}
+            >
               <i className="bi bi-envelope-at-fill"></i>
             </a>
           </div>

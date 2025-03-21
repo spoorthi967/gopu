@@ -175,6 +175,7 @@
   .experience-main-container {
     padding: 20px;
     gap: 20px;
+    overflow: scroll;
   }
 
   /* === Experience Title === */
@@ -194,37 +195,33 @@
   }
 
   .experience-company {
-    font-size: 16px;
+    font-size: 19px;
   }
 
   .experience-duration {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .experience-list li {
-    font-size: 14px;
+    font-size: 30px;
   }
 }
 
-/* Mobile-First Styles (for smaller screens) */
 @media (max-width: 480px) {
-  /* === Main Experience Container === */
   .experience-main-container {
     padding: 15px;
-   
+    max-height: 80vh; /* or 100vh if needed */
+    overflow-y: auto;
   }
 
-  /* === Experience Title === */
   .experience-title {
-    font-size: 1.0 rem;
+    font-size: 1.4rem; /* removed the space between number and unit */
     margin-bottom: 10px;
     display: block;
   }
 
-  /* === Experience Card Adjustments === */
   .experience-card {
     padding: 10px;
-   
   }
 
   .experience-card h2 {
@@ -233,10 +230,10 @@
 
   .experience-company,
   .experience-duration {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .experience-list li {
-    font-size: 8px;
+    font-size: 14px; /* previously 30px in 768px block — now corrected */
   }
 }
