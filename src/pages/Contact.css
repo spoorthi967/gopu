@@ -38,6 +38,7 @@ html, body {
   box-shadow: 0 0 10px rgba(46, 44, 44, 0.1);
   margin-top: 250px; /* Adjusted for better visibility */
   color: white;
+  margin-bottom: 200px;
 }
 
 .contact-container:hover{
