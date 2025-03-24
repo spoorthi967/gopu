@@ -87,28 +87,8 @@ const Experience = () => {
             </ul>
           </div>
 
-          {/* Web Development Intern */}
-          <div className="experience-card">
-            <h2><i className="bi bi-briefcase"></i> Web Development Intern</h2>
-            <p className="experience-company">
-              <i className="bi bi-building"></i> Electronics Corporation of India Limited (ECIL)
-            </p>
-            <p className="experience-duration">
-              <i className="bi bi-calendar-event"></i> 2018 – 2020
-            </p>
-            <ul className="experience-list">
-              <li><i className="bi bi-code"></i> Assisted in developing and maintaining web applications, focusing on front-end design and
-              functionality.</li>
-              <li><i className="bi bi-palette"></i> Collaborated with senior developers to implement responsive web interfaces using HTML,
-              CSS, and JavaScript</li>
-              <li><i className="bi bi-code"></i>     Gained hands-on experience in web technologies, enhancing understanding of web development
-              frameworks and best practices.              </li>
-    
-              <li><i className="bi bi-palette"></i>  Supported the integration of web applications with back-end systems for improved performance
-              and user experience.               </li>
-
-            </ul>
-          </div>
+          
+        
         </Slider>
       </div>
     </div>

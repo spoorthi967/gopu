@@ -55,7 +55,8 @@ const Moreabout = () => {
           <div className="about-section">
             <h2>Who Am I?</h2>
             <p>
-              I am a passionate Full-Stack Developer with experience in modern
+            I’m a passionate Web Developer with 4+ years of IT experience, specializing in building responsive, user-friendly applications using React, JavaScript (ES6+), 
+            and UI/UX design principles. Skilled in Redux, Tailwind CSS, and RESTful APIs, experience in modern
               web technologies. I love solving complex problems and building
               scalable applications. My expertise spans from Frontend to Backend
               development.

@@ -29,8 +29,10 @@ const Aboutme = () => {
         <h1 className="fade-in">About Me</h1>
         <h2 className="highlight">Web Developer & Designer</h2>
         <p className="slide-up">
-          I am a passionate <strong>Web Developer</strong> with expertise in <strong>React, JavaScript, and UI/UX design</strong>. 
-          With over 5 years of experience, I create engaging, responsive, and user-friendly web applications.
+        I’m a passionate Web Developer with 4+ years of IT experience, specializing in building responsive, user-friendly applications using React, JavaScript (ES6+), 
+        and UI/UX design principles. Skilled in Redux, Tailwind CSS, and RESTful APIs,
+         I recently developed a Market Dashboard featuring real-time data and clean UI. I also have hands-on backend experience with Node.js, 
+         Express.js, and MongoDB from projects completed during my M.S. in Information Systems.
         </p>
         <p className="slide-up delay">
           My focus is on delivering high-quality, performance-optimized solutions that enhance digital experiences.
