@@ -4,29 +4,34 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Skills.css"; // Import styles
 
-import { 
-  FaReact, 
-  FaNodeJs, 
-  FaDatabase, 
-  FaGithub, 
-  FaTools, 
-  FaCode, 
-  FaBug, 
+import {
+  FaReact,
+  FaNodeJs,
+  FaDatabase,
+  FaGithub,
+  FaTools,
+  FaCode,
+  FaBug,
   FaServer,
   FaAngular,
   FaVuejs,
   FaCloud,
   FaCodeBranch,
-  FaTasks
+  FaTasks,
 } from "react-icons/fa";
 
-import { SiMongodb, SiGraphql, SiFirebase, SiPostgresql, SiMysql, SiRedis, SiSocketdotio } from "react-icons/si";
+import {
+  SiMongodb,
+  SiGraphql,
+  SiFirebase,
+  SiPostgresql,
+  SiMysql,
+  SiRedis,
+  SiSocketdotio,
+} from "react-icons/si";
 import { FaAws } from "react-icons/fa6";
 
-
-
 const skillsData = [
-
   {
     category: "Web Development",
     skills: [
@@ -36,7 +41,6 @@ const skillsData = [
       { name: "Node.js", icon: <FaNodeJs /> },
     ],
   },
-  
   {
     category: "Front-End Technologies",
     skills: [
@@ -55,8 +59,6 @@ const skillsData = [
       { name: "API Integration", icon: <FaServer /> },
     ],
   },
-  
-
   {
     category: "Back-End Technologies",
     skills: [
@@ -69,11 +71,9 @@ const skillsData = [
       { name: "AWS (Hosting & Services)", icon: <FaAws /> },
     ],
   },
-  
   {
     category: "Build Tools & Version Control",
     skills: [
-
       { name: "Git", icon: <FaGithub /> },
       { name: "GitHub", icon: <FaGithub /> },
     ],
@@ -88,21 +88,17 @@ const skillsData = [
       { name: "PostgreSQL", icon: <FaDatabase /> },
       { name: "SQL Server (MSSQL)", icon: <FaDatabase /> },
       { name: "Firebase", icon: <FaDatabase /> },
-   
     ],
   },
-
   {
     category: "Development Tools & Support",
     skills: [
-     
       { name: "Docker", icon: <FaServer /> },
       { name: "Kubernetes", icon: <FaServer /> },
       { name: "CI/CD Pipelines (Jenkins, GitHub Actions, GitLab CI/CD)", icon: <FaTools /> },
       { name: "AWS", icon: <FaCloud /> },
       { name: "Google Cloud", icon: <FaCloud /> },
       { name: "Azure", icon: <FaCloud /> },
-     
     ],
   },
   {
@@ -116,8 +112,6 @@ const skillsData = [
       { name: "Scrum Framework", icon: <FaTasks /> },
     ],
   },
-  
-  
   {
     category: "Development Tools & Support",
     skills: [
@@ -144,14 +138,11 @@ const Skills = () => {
 
   return (
     <section className="skills-main-container">
-      {/* Left Section - Image */}
-    
-
-      {/* Right Section - Skills Slider */}
-
-    
       <div className="skills-content">
-        <h2>SKILLS AND TECHNOLOGIES</h2>
+        <h2 className="skills-heading">
+          <FaTools className="skills-icon" />
+              Skills and Technologies
+        </h2>
 
         <Slider {...settings}>
           {skillsData.map((category, index) => (

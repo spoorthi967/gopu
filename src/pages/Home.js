@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import pic from "../Images/pic.jpg";
+import pic from "../Images/pic1618.png";
 import clickSound from "../Images/click1.wav"; // ✅ Import click sound
 import "./Home.css";
 

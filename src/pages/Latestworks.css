@@ -1,140 +1,179 @@
-/* General Container */
+/* Global Font & Container Setup */
+body,
 .latest-works-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  margin-top: 150px;
-  background-color: #222;;
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
+  background-color: #222;
 }
 
-/* Heading */
-h1 {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+/* Main Section Container */
+.latest-works-container {
+  max-width: 960px;
+  margin: 150px auto 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #222;
 }
 
 /* Project Slide Box */
 .project-slide {
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.08);
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  margin: 10px;
-  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+  margin: 15px;
+  text-align: left;
+  transition: transform 0.3s ease;
 }
 
 .project-slide:hover {
   transform: translateY(-5px);
 }
 
+/* Project Headings */
 .project-slide h2 {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   color: #ffffff;
 }
 
 .project-slide h3 {
-  font-size: 1.1rem;
-  color: #ff914d;
-  margin-bottom: 15px;
+  font-size: 18px;
+  font-style: italic;
+  color: #f4a261;
+  margin-bottom: 20px;
 }
 
-/* Project Details */
+/* Project Details List */
 .project-slide ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .project-slide ul li {
-  font-size: 1rem;
-  color: white;
-  padding: 10px;
+  font-size: 18px;
+  color: #ffffff;
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .project-slide ul li svg {
-  margin-right: 8px;
+  margin-right: 10px;
+  font-size: 20px;
   color: #ff914d;
-  font-size: 1.6rem;
 }
 
-/* Back Button */
+/* Back Button Container */
 .back-button1 {
-
   text-align: center;
-  margin-top: 20px;
-
+  margin-top: 30px;
 }
 
+/* Back to Home Button */
 .btn1 {
   display: inline-flex;
   align-items: center;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 1rem;
-  padding: 10px 20px;
+  justify-content: center;
+  font-size: 18px;
+  padding: 12px 24px;
   border-radius: 50px;
   border: 2px solid #f4a261;
+  background-color: transparent;
   color: #f4a261;
+  text-decoration: none;
   transition: all 0.3s ease-in-out;
-  font-size: 1rem;
- 
 }
 
 .btn1:hover {
   background-color: #a09c99;
+  color: #ffffff;
 }
 
 .btn1 svg {
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
-/* Mobile Responsiveness */
+/* Carousel Arrows */
+.custom-arrow {
+  position: absolute;
+  top: 45%;
+  z-index: 2;
+  font-size: 28px;
+  color: #f4a261;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.custom-arrow:hover {
+  transform: scale(1.1);
+}
+
+.custom-prev {
+  left: -40px;
+}
+
+.custom-next {
+  right: -40px;
+}
+
+/* Carousel Dots */
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #f4a261;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffffff;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .latest-works-container {
-    padding: 10px;
+    padding: 20px;
   }
 
   .project-slide {
-    padding: 15px;
-    margin: 10px 5px;
+    padding: 20px;
   }
 
   .project-slide h2 {
-    font-size: 1.3rem;
+    font-size: 20px;
   }
 
   .project-slide h3 {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .project-slide ul li {
-    font-size: 0.9rem;
+    font-size: 16px;
   }
 
-  /* Hide "Back to Home" text and show only the arrow */
   .btn1 {
-   
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 20%; /* Make it a circular button */
+    padding: 12px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 50%;
   }
 
   .btn1 span {
-    display: none; /* Hide the text */
+    display: none;
   }
 
-  .me-2 svg {
-    display: flex;
-    margin: 0; /* Center the arrow */
-    font-size: 1.5rem; /* Adjust arrow size */
+  .btn1 svg {
+    margin: 0;
+  }
+
+  .custom-prev {
+    left: -20px;
+  }
+
+  .custom-next {
+    right: -20px;
   }
 }

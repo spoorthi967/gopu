@@ -49,6 +49,11 @@
   margin-top: 0; /* Ensures heading is not pushed down */
   display: block; /* Ensures visibility */
 }
+.skills-icon {
+  font-size: 2rem;
+  color:  #f4a261;
+  
+}
 
 /* Skills Category Section */
 .skills-category {
