@@ -1,21 +1,25 @@
-/* General Reset */
+/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Ensure Full Page Height */
 html, body {
   height: 100%;
+  font-family: "Arial", sans-serif;
+  color: white;
+  background-color: #222;
   display: flex;
   flex-direction: column;
-  background-color: #000000; /* Match background color */
-  color: white;
-  font-family: Arial, sans-serif;
 }
 
-/* Main Wrapper */
+/* Optional: container class for the section wrapper */
+.contact-details {
+  background-color: #222;
+}
+
+/* Main Layout */
 .main-container {
   flex: 1;
   display: flex;
@@ -23,109 +27,107 @@ html, body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-
 }
 
-/* Contact Container */
+/* Contact Box */
 .contact-container {
   max-width: 500px;
   width: 100%;
-  margin: 0 auto;
+  margin: 250px auto 200px auto;
+  padding: 25px;
   text-align: center;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(46, 44, 44, 0.1);
-  margin-top: 250px; /* Adjusted for better visibility */
-  color: white;
-  margin-bottom: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-container:hover{
+.contact-container:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 4px 10px rgba(255, 145, 77, 0.3);
+  box-shadow: 0px 4px 12px rgba(255, 145, 77, 0.3);
 }
 
-/* Heading styles */
+/* Headings */
 .contact-container h2 {
   color: #f4a261;
   font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 
-/* Paragraph styles */
+/* Paragraphs */
 .contact-container p {
   font-size: 1.1rem;
   margin-bottom: 15px;
-
-  
+  color: #eee;
 }
 
-
-/* Link styles */
+/* Email or Contact Links */
 .contact-container a {
   color: #f4a261;
+  background: #111;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   font-weight: bold;
-  display: flex;
-  flex-wrap: wrap;
-  text-align:center;
-  justify-content: center;
-  padding: 10px;
-  background: #111111;
-  border-radius: 8px;
+  transition: background 0.3s ease;
 }
 
 .contact-container a:hover {
   text-decoration: underline;
+  background: #1a1a1a;
 }
 
-/* Strong tag for labels */
+/* Labels */
 .contact-container strong {
   color: #f4a261;
 }
 
-/* Button Styling */
+/* Call-to-Action Button */
 .btn {
   display: inline-block;
-
   background-color: #f4a261;
   padding: 12px 20px;
   border-radius: 5px;
   font-weight: bold;
   text-decoration: none;
   margin-top: 20px;
+  color: #111;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover {
   background-color: #e76f51;
-  color: white;
+  color: #fff;
 }
 
-/* Image Styling - Ensuring Full Visibility */
+/* Optional Image Styling */
 .contact-container img {
   max-width: 100%;
   height: auto;
-  display: block;
   margin: 10px auto;
-  border-radius: 8px; 
+  display: block;
+  border-radius: 8px;
 }
 
-/* Ensuring "Latest Works" Button is Visible */
+/* Latest Works Button Wrapper */
 .latest-works-container {
   text-align: center;
   margin-top: 20px;
 }
 
 .latest-works-container .btn {
-  display: block;
-  width: fit-content;
+  display: inline-block;
   margin: 20px auto;
+  width: fit-content;
 }
 
 /* Footer */
 footer {
   margin-top: auto;
-  padding: 10px;
+  padding: 12px;
   text-align: center;
   background: #222;
   color: white;
@@ -135,8 +137,8 @@ footer {
 @media (max-width: 768px) {
   .contact-container {
     max-width: 90%;
-    margin-top: 80px; /* Adjusted for better visibility */
-    padding: 15px;
+    padding: 20px;
+    margin-top: 150px;
   }
 
   .contact-container h2 {
@@ -155,8 +157,8 @@ footer {
 @media (max-width: 480px) {
   .contact-container {
     max-width: 95%;
-    margin-top: 300px;
-    padding: 10px;
+    margin-top: 180px;
+    padding: 15px;
   }
 
   .contact-container h2 {
@@ -164,12 +166,7 @@ footer {
   }
 
   .contact-container p {
-    font-size: 0.9rem;
-  }
-
-  .contact-container img {
-    max-width: 100%;
-    height: auto;
+    font-size: 0.95rem;
   }
 
   .btn {

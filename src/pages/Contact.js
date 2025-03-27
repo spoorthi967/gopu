@@ -1,17 +1,25 @@
 import React from 'react';
-import './Contact.css'; // Import CSS for styling
+import './Contact.css';
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Contact = () => {
   return (
     <div className="contact-container">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out via email or phone:</p>
-      <p>
-        <strong>Email:</strong> <a href="mailto:gopuspoorthi18@gmail.com">gopuspoorthi18@gmail.com</a>
+      <h2 className="contact-heading">Contact </h2>
+      <p className="contact-subtext">
+        I'm open to opportunities, collaborations, and conversations. Reach out through mail  below:
       </p>
-      <p>
+
+      <div className="contact-info">
+        <div className="contact-item">
+    
+          <a href="mailto:gopuspoorthi18@gmail.com">gopuspoorthi18@gmail.com</a>
+        </div>
+
+        
+
        
-      </p>
+      </div>
     </div>
   );
 };
