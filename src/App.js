@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
 import logo3 from './Images/logo4.png';
-import clickSound from './Images/click1.wav'; // 🔊 Import click sound
+import clickSound from './Images/click.mp3'; // 🔊 Import click sound
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);

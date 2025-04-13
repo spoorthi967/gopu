@@ -12,7 +12,7 @@ import {
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Moreabout.css";
-import clickSound from "../Images/click1.wav";
+import clickSound from "../Images/click.mp3";
 
 // Custom Arrows
 const CustomPrevArrow = ({ onClick }) => (
@@ -55,7 +55,7 @@ const Moreabout = () => {
           <div className="about-section">
             <h2>Who Am I?</h2>
             <p>
-            I’m a passionate Web Developer with 4+ years of IT experience, specializing in building responsive, user-friendly applications using React, JavaScript (ES6+), 
+            I’m a passionate Web Developer with 3+ years of IT experience, specializing in building responsive, user-friendly applications using React, JavaScript (ES6+), 
             and UI/UX design principles. Skilled in Redux, Tailwind CSS, and RESTful APIs, experience in modern
               web technologies. I love solving complex problems and building
               scalable applications. My expertise spans from Frontend to Backend

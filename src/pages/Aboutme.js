@@ -2,7 +2,7 @@ import React from "react";
 import "./Aboutme.css";
 import about from "../Images/about.webp";
 import { useNavigate } from "react-router-dom";
-import clickSound from "../Images/click1.wav"; // ✅ Import the sound file
+import clickSound from "../Images/click.mp3"; // ✅ Import the sound file
 
 const Aboutme = () => {
   const navigate = useNavigate();
@@ -29,7 +29,7 @@ const Aboutme = () => {
         <h1 className="fade-in">About Me</h1>
         <h2 className="highlight">Web Developer & Designer</h2>
         <p className="slide-up">
-        I’m a passionate Web Developer with 4+ years of IT experience, specializing in building responsive, user-friendly applications using React, JavaScript (ES6+), 
+        I’m a passionate Web Developer with 3+ years of IT experience, specializing in building responsive, user-friendly applications using React, JavaScript (ES6+), 
         and UI/UX design principles. Skilled in Redux, Tailwind CSS, and RESTful APIs,
          I recently developed a Market Dashboard featuring real-time data and clean UI. I also have hands-on backend experience with Node.js, 
          Express.js, and MongoDB from projects completed during my M.S. in Information Systems.

@@ -3,7 +3,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import pic from "../Images/pic1618.png";
-import clickSound from "../Images/click1.wav"; // ✅ Import click sound
+import clickSound from "../Images/click.mp3"; // ✅ Import click sound
 import "./Home.css";
 
 const Home = () => {

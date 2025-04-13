@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./Experience.css";
-import experience from "../Images/experience.jpg";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Importing arrow icons
 
 // Custom Previous Arrow (Left Side)
@@ -73,7 +72,7 @@ const Experience = () => {
               <i className="bi bi-building"></i> Wipro
             </p>
             <p className="experience-duration">
-              <i className="bi bi-calendar-event"></i> August 2020 – March 2023
+              <i className="bi bi-calendar-event"></i> August 2021 – December 2022
             </p>
             <ul className="experience-list">
               <li><i className="bi bi-laptop"></i>Developed responsive, mobile-friendly web applications using React.js and JavaScript .</li>

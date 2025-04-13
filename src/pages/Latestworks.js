@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { FaReact, FaDesktop, FaCode, FaServer, FaChartBar, FaMobileAlt, FaArrowLeft, FaArrowRight } from 'react-icons/fa'; 
 import { SiRedux, SiAxios, SiMongodb } from 'react-icons/si';
-import clickSound from "../Images/click1.wav"; // ✅ Make sure this file exists
+import clickSound from "../Images/click.mp3"; // ✅ Make sure this file exists
 
 // ✅ Global sound player function
 const playClickSound = () => {
