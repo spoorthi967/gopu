@@ -72,7 +72,7 @@ const Experience = () => {
               <i className="bi bi-building"></i> Wipro
             </p>
             <p className="experience-duration">
-              <i className="bi bi-calendar-event"></i> August 2021 – December 2022
+            
             </p>
             <ul className="experience-list">
               <li><i className="bi bi-laptop"></i>Developed responsive, mobile-friendly web applications using React.js and JavaScript .</li>
